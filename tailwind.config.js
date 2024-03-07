@@ -8,6 +8,10 @@ export default {
       },
     },
     extend: {
+      fontFamily:{
+				'primary': ['Montserrat'],
+				'secondary': ['Bebas Neue'],
+			},
       colors: {
         blue: {
           a300: "rgba(46, 103, 222, 0.3)",
@@ -25,6 +29,7 @@ export default {
           50: "#CDD1DF",
           400: "#868899",
         },
+        'light-grey': '#CDD1DF',
       },
       padding: {
         17.5: "4.375rem",
