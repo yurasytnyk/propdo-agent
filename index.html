@@ -346,7 +346,7 @@
       </section>
 
       <!-- Imóvel Hub section -->
-      <section class="pt-8 pb-[152px]">
+      <section class="pt-8 pb-[152px] overflow-hidden">
         <div class="container mx-auto">
           <!-- Navigation -->
           <nav
@@ -443,18 +443,20 @@
 
           <!-- Section title -->
           <div class="flex justify-between items-center pb-16">
-            <h2 class="text-7xl">Imóvel <span class="text-blue-100">Hub</span></h2>
+            <h2 class="text-7xl uppercase font-secondary">
+              Imóvel <span class="text-blue-100">Hub</span>
+            </h2>
 
             <a href="#" class="btn btn-gradient">Descobrir Mais</a>
           </div>
         </div>
 
-        <div class="swiper">
-          <div class="swiper-wrapper flex">
+        <div class="swiper container overflow-visible">
+          <div class="swiper-wrapper container mx-auto">
             <!-- Slide -->
-            <div class="swiper-slide shrink-0 w-[570px]">
+            <div class="swiper-slide w-[570px]">
               <!-- Post card -->
-              <article class="relative">
+              <a href="#" class="relative">
                 <div class="relative aspect-[570/420] w-[570px]">
                   <img
                     src="/images/post-1.jpg"
@@ -484,7 +486,79 @@
                     </p>
                   </div>
                 </div>
-              </article>
+              </a>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide w-[570px]">
+              <!-- Post card -->
+              <a href="#" class="relative">
+                <div class="relative aspect-[570/420] w-[570px]">
+                  <img
+                    src="/images/post-2.jpg"
+                    alt="blog post"
+                    class="absolute inset-0 rounded-5"
+                  />
+                </div>
+
+                <!-- Post card content -->
+                <div
+                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full"
+                >
+                  <div class="flex justify-between text-xs mb-4">
+                    <span class="font-bold">Bruce Willis</span>
+
+                    <span>September 20, 2023</span>
+                  </div>
+
+                  <div>
+                    <h3 class="font-bold mb-2">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                    </h3>
+
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                      volutpat mattis eros. Nullam malesuada erat ut turpis...
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide -->
+            <div class="swiper-slide w-[570px]">
+              <!-- Post card -->
+              <a href="#" class="relative">
+                <div class="relative aspect-[570/420] w-[570px]">
+                  <img
+                    src="/images/post-3.jpg"
+                    alt="blog post"
+                    class="absolute inset-0 rounded-5"
+                  />
+                </div>
+
+                <!-- Post card content -->
+                <div
+                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full"
+                >
+                  <div class="flex justify-between text-xs mb-4">
+                    <span class="font-bold">Bruce Willis</span>
+
+                    <span>September 20, 2023</span>
+                  </div>
+
+                  <div>
+                    <h3 class="font-bold mb-2">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                    </h3>
+
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                      volutpat mattis eros. Nullam malesuada erat ut turpis...
+                    </p>
+                  </div>
+                </div>
+              </a>
             </div>
           </div>
 
