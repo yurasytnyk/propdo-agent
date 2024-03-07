@@ -111,15 +111,20 @@
 
             <ol class="flex flex-col mb-8">
               <li
-                class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer hover:bg-purple-25 rounded-5 group"
+                data-selected="true"
+                class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer data-[selected=true]:bg-purple-25 rounded-5 group"
               >
                 <span
-                  class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
+                  class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center data-se group-data-[selected=true]:bg-purple-500 group-hover:bg-purple-500 group-data-[selected=true]:text-white group-hover:text-white transition-colors duration-300"
                   >01</span
                 >
 
                 <div>
-                  <h3>Estatísticas e Tendências</h3>
+                  <h3
+                    class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold transition-colors duration-300"
+                  >
+                    Estatísticas e Tendências
+                  </h3>
                   <p class="text-gray-400 text-sm">
                     Todas as informações atualizadas sobre o mercado imobiliário de 2024 no Brasil,
                     incluindo o valor médio por metro quadrado em diferentes regiões e bairros.
@@ -128,7 +133,7 @@
               </li>
 
               <li
-                class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer hover:bg-purple-25 rounded-5 group"
+                class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer rounded-5 group"
               >
                 <span
                   class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
@@ -136,7 +141,11 @@
                 >
 
                 <div>
-                  <h3>Valor do metro quadrado</h3>
+                  <h3
+                    class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold transition-colors duration-300"
+                  >
+                    Valor do metro quadrado
+                  </h3>
                   <p class="text-gray-400 text-sm">
                     Descubra o verdadeiro valor do metro quadrado para maximizar seus investimentos
                     imobiliários. Informação essencial para decisões inteligentes.
@@ -145,7 +154,7 @@
               </li>
 
               <li
-                class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer hover:bg-purple-25 rounded-5 group"
+                class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer rounded-5 group"
               >
                 <span
                   class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
@@ -153,7 +162,11 @@
                 >
 
                 <div>
-                  <h3>Tabela de Preços de Avaliação de Imóveis</h3>
+                  <h3
+                    class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold transition-colors duration-300"
+                  >
+                    Tabela de Preços de Avaliação de Imóveis
+                  </h3>
                   <p class="text-gray-400 text-sm">
                     Tabela de preços de avaliação de imóveis atualizada, auxiliando compradores e
                     vendedores a entenderem o valor justo de suas propriedades.
@@ -171,6 +184,7 @@
         </div>
       </section>
 
+      <!-- Como funciona? section -->
       <section class="bg-blue-100">
         <div class="container mx-auto relative text-white">
           <h2
