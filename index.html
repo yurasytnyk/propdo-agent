@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Propdo</title>
   </head>
-  <body>
+  <body class="font-primary">
     <main id="app">
       <!-- Chart section -->
       <section class="pt-4 pb-6 lg:py-24 container mx-auto">
@@ -173,13 +173,19 @@
 
       <section class="bg-blue-100">
         <div class="container mx-auto relative text-white">
-          <!-- <h2 class="uppercase text-7xl pb-16">Como funciona?</h2> -->
+          <h2
+            class="absolute left-4 lg:left-0 top-40 lg:top-48 z-10 uppercase lg:text-7xl text-[40px] leading-[48px] font-secondary pb-16"
+          >
+            Como funciona?
+          </h2>
 
           <ol
-            class="grid grid-cols-4 content-center items-baseline h-dvh border-l-gray-a200 border-l border-r-gray-a200 border-r"
+            class="grid grid-cols-[repeat(4,272px)] lg:grid-cols-4 overflow-x-auto overflow-y-hidden content-center items-baseline h-screen ml-2 lg:ml-0 border-l-gray-a200 border-l border-r-gray-a200 border-r"
           >
-            <li class="px-8 h-dvh flex flex-col justify-center">
-              <span class="text-7xl flex items-center gap-2 mb-8"
+            <li
+              class="relative overflow-hidden px-8 h-screen flex flex-col justify-center lg:pb-2 hover:bg-gradient-to-b bg-blue-100 from-blue-100 to-purple-500 group"
+            >
+              <span class="text-7xl flex items-center gap-2 mb-8 font-secondary"
                 >01
                 <svg
                   width="150"
@@ -204,10 +210,20 @@
                 Pesquise e analise as tendências do mercado imobiliário na sua área, incluindo o
                 valor do metro quadrado por bairro e as estatísticas atualizadas do setor.
               </p>
+
+              <div class="absolute left-0 bottom-0 overflow-hidden aspect-[291/242] w-[291px]">
+                <img
+                  src="/images/house.png"
+                  alt="house decoration"
+                  class="absolute inset-0 scale-110 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+                />
+              </div>
             </li>
 
-            <li class="px-8 h-dvh flex flex-col justify-center border-l-gray-a200 border-l">
-              <span class="text-7xl flex items-center gap-2 mb-8"
+            <li
+              class="relative overflow-hidden px-8 h-screen flex flex-col justify-center pb-14 lg:pb-12 border-l-gray-a200 border-l hover:bg-gradient-to-b from-blue-100 to-purple-500 group"
+            >
+              <span class="text-7xl flex items-center gap-2 mb-8 font-secondary"
                 >02
                 <svg
                   width="150"
@@ -230,10 +246,20 @@
                 Avalie o imóvel que deseja comprar ou vender utilizando a nossa calculadora
                 inteligente gratuita.
               </p>
+
+              <div class="absolute left-0 bottom-0 overflow-hidden aspect-[291/242] w-[291px]">
+                <img
+                  src="/images/house.png"
+                  alt="house decoration"
+                  class="absolute inset-0 scale-110 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+                />
+              </div>
             </li>
 
-            <li class="px-8 h-dvh flex flex-col justify-center border-l-gray-a200 border-l">
-              <span class="text-7xl flex items-center gap-2 mb-8"
+            <li
+              class="relative overflow-hidden px-8 h-screen flex flex-col justify-center pb-14 lg:pb-12 border-l-gray-a200 border-l hover:bg-gradient-to-b from-blue-100 to-purple-500 group"
+            >
+              <span class="text-7xl flex items-center gap-2 mb-8 font-secondary"
                 >03
                 <svg
                   width="150"
@@ -248,6 +274,14 @@
                     fill="white"
                   />
                 </svg>
+
+                <div class="absolute left-0 bottom-0 overflow-hidden aspect-[291/242] w-[291px]">
+                  <img
+                    src="/images/house.png"
+                    alt="house decoration"
+                    class="absolute inset-0 scale-110 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+                  />
+                </div>
               </span>
 
               <h3 class="font-bold text-xl leading-6 mb-4">Simule o seu crédito imobiliário</h3>
@@ -258,8 +292,10 @@
               </p>
             </li>
 
-            <li class="px-8 h-dvh flex flex-col justify-center border-l-gray-a200 border-l">
-              <span class="text-7xl flex items-center gap-2 mb-8"
+            <li
+              class="relative overflow-hidden px-8 h-screen flex flex-col justify-center pb-4 border-l-gray-a200 border-l hover:bg-gradient-to-b from-blue-100 to-purple-500 group"
+            >
+              <span class="text-7xl flex items-center gap-2 mb-8 font-secondary"
                 >04
                 <svg
                   width="150"
@@ -282,6 +318,14 @@
                 Receba recomendações personalizadas dos melhores corretores de imóveis que atuam na
                 sua área, garantindo um serviço de qualidade e confiança.
               </p>
+
+              <div class="absolute left-0 bottom-0 overflow-hidden aspect-[291/242] w-[291px]">
+                <img
+                  src="/images/house.png"
+                  alt="house decoration"
+                  class="absolute inset-0 scale-110 group-hover:scale-100 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out"
+                />
+              </div>
             </li>
           </ol>
         </div>
@@ -437,7 +481,6 @@
 
     <!-- Footer -->
     <footer class="bg-blue-100 pt-8 pb-9">
-
       <!-- Footer main content -->
       <div class="container mx-auto text-white grid grid-cols-2 gap-[42px] pb-17.5">
         <!-- Subscribe section -->
@@ -591,7 +634,9 @@
 
             <div class="leading-4">
               <h3 class="mb-2">Your City / Country</h3>
-              <p class="text-xs text-light-grey">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.</p>
+              <p class="text-xs text-light-grey">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+              </p>
             </div>
           </div>
         </div>
@@ -684,7 +729,9 @@
           </ul>
 
           <ul class="flex flex-col gap-2 text-sm">
-            <li class="mb-2 font-bold text-white text-base">Simulador de Financiamento Imobiliário</li>
+            <li class="mb-2 font-bold text-white text-base">
+              Simulador de Financiamento Imobiliário
+            </li>
 
             <li>
               <a href="#">Calculadora de Financiamento</a>
