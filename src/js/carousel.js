@@ -9,6 +9,8 @@ export function initCarousel() {
     scrollbar: {
       el: ".swiper-scrollbar",
       hide: true,
+      draggable: true,
+      dragSize: 50,
     },
   });
 }
