@@ -32,6 +32,7 @@ export default {
         22: "5.5rem",
       },
       borderRadius: {
+        3.5: "14px",
         5: "20px",
         25: "100px",
       },
