@@ -11,6 +11,7 @@ import {
 
 import { zeroLine } from "./chart-plugins/zero-line";
 import { getTailwindTheme } from "./get-tailwind-theme";
+import { getCurrencyFormat } from "./get-currency-format";
 
 export function initChart(datasets) {
   const { colors, fontFamily } = getTailwindTheme();
@@ -36,21 +37,46 @@ export function initChart(datasets) {
           border: {
             display: false,
           },
+          ticks: {
+            padding: 24,
+            color: colors.gray[50],
+            font: {
+              size: 14,
+              family: fontFamily.primary,
+            },
+          },
         },
         y: {
-          stacked: true,
+          max: 150e3,
           grid: {
             color: colors.blue[25],
             drawTicks: false,
           },
           ticks: {
-            stepSize: 25,
+            padding: 16,
             color: colors.gray[50],
-            maxTicksLimit: 150,
+            stepSize: 25e3,
+            maxTicksLimit: 10,
+            callback: getCurrencyFormat,
           },
           border: {
             display: false,
             dash: [4, 4],
+          },
+        },
+        y1: {
+          position: "right",
+          border: {
+            display: false,
+          },
+          grid: {
+            display: false,
+            drawTicks: false,
+          },
+          ticks: {
+            padding: 16,
+            callback: (value) => `${value * 100}%`,
+            color: colors.gray[50],
           },
         },
       },
@@ -58,6 +84,7 @@ export function initChart(datasets) {
         legend: {
           position: "bottom",
           labels: {
+            padding: 45,
             boxWidth: 16,
             boxHeight: 16,
             usePointStyle: true,
