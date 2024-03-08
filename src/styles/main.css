@@ -9,7 +9,14 @@
   :root {
     --swiper-scrollbar-bottom: -40px;
     --swiper-scrollbar-size: 8px;
+    --swiper-pagination-left: 56px;
+    --swiper-pagination-bullet-horizontal-gap: 0;
     --swiper-scrollbar-drag-bg-color: #2e67de;
+  }
+
+  html,
+  body {
+    @apply relative h-full;
   }
 }
 
@@ -33,4 +40,11 @@
   .input.input-medium {
     @apply h-14 py-5 pl-12 pr-6;
   }
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 8px;
 }

@@ -1,8 +1,6 @@
 import Swiper from "swiper";
 import { Scrollbar, Keyboard } from "swiper/modules";
 
-import "swiper/css/bundle";
-
 export function initCarousel() {
   new Swiper(".swiper", {
     slidesPerView: "auto",
