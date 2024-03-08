@@ -15,8 +15,10 @@ export default {
       colors: {
         blue: {
           a300: "rgba(46, 103, 222, 0.3)",
+          15: "#D5E1F8",
           25: "#E9F0FF",
           50: "#6798FF",
+          75: "#A3BCF0",
           100: "#2E67DE",
         },
         purple: {
