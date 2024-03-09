@@ -80,6 +80,11 @@ export function initChart(datasets) {
           },
         },
       },
+      elements: {
+        bar: {
+          base: 0,
+        },
+      },
       plugins: {
         legend: {
           position: "bottom",

@@ -13,7 +13,6 @@ export const chartMockData = [
     borderRadius,
     borderSkipped: false,
     barThickness: 32,
-    base: 0,
   },
   {
     label: "Valores para venda",
@@ -22,7 +21,6 @@ export const chartMockData = [
     borderRadius,
     borderSkipped: false,
     barThickness: 32,
-    base: 0,
   },
   {
     label: "valor m2 por região",
@@ -31,6 +29,5 @@ export const chartMockData = [
     borderRadius,
     borderSkipped: false,
     barThickness: 32,
-    base: 0,
   },
 ];
