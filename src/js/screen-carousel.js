@@ -1,7 +1,7 @@
 import Swiper from "swiper";
 import { Mousewheel, Pagination } from "swiper/modules";
 
-import { updateCssVars } from "./update-css-vars";
+import { updateCssVars } from "./update-css-vars/update-css-vars";
 
 export function initScreenCarousel() {
   const swiper = new Swiper(".vertical-slider", {

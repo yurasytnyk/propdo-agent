@@ -13,6 +13,9 @@ export default {
         secondary: ["Bebas Neue"],
       },
       colors: {
+        "nav-theme": "var(--nav-theme)",
+        "nav-border-theme": "var(--nav-border-theme)",
+        "nav-text-theme": "var(--nav-text-theme)",
         blue: {
           a300: "rgba(46, 103, 222, 0.3)",
           15: "#D5E1F8",

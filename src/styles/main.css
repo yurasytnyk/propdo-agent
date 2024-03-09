@@ -7,6 +7,9 @@
 
 @layer base {
   :root {
+    --nav-theme: rgb(233, 240, 255);
+    --nav-text-theme: rgb(0, 0, 0);
+    --nav-border-theme: rgba(46, 103, 222, 0.3);
     --swiper-scrollbar-bottom: -40px;
     --swiper-scrollbar-size: 8px;
     --swiper-pagination-left: 56px;
