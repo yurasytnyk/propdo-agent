@@ -35,7 +35,7 @@
   }
 
   .input {
-    @apply rounded-25 placeholder:text-sm placeholder:font-medium text-black;
+    @apply rounded-25 placeholder:text-sm placeholder:font-medium text-black hover:ring-inset hover:ring-2 transition-all duration-300;
   }
 
   .input.input-medium {
