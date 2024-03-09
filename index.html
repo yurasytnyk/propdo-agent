@@ -388,26 +388,30 @@
         <div class="swiper-slide" data-slide-theme="light">
           <!-- Imóvel Hub section -->
           <section
-            class="container mx-auto h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
+            class="container mx-4 lg:mx-auto h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
           >
             <!-- Section title -->
-            <div class="flex justify-between items-center lg:pb-16">
-              <h2 class="lg:text-7xl text-[40px] leading-[48px] uppercase font-secondary">
+            <div class="flex justify-between items-center md:pb-16">
+              <h2
+                class="md:text-7xl text-[40px] leading-[48px] mb-8 md:mb-0 uppercase font-secondary"
+              >
                 Imóvel <span class="text-blue-100">Hub</span>
               </h2>
 
-              <a href="#" class="btn btn-gradient">Descobrir Mais</a>
+              <a href="#" class="btn btn-gradient hidden md:flex">Descobrir Mais</a>
             </div>
 
-            <div class="swiper horizontal-slider container overflow-visible">
+            <div class="swiper horizontal-slider container lg:overflow-visible">
               <div class="swiper-wrapper container mx-auto">
                 <!-- Slide -->
                 <div
                   class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="relative">
-                    <div class="relative aspect-[570/420] w-[570px]">
+                  <a href="#" class="absolute lg:overflow-hidden">
+                    <div
+                      class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
+                    >
                       <img
                         src="/images/post-1.jpg"
                         alt="blog post"
@@ -417,7 +421,7 @@
 
                     <!-- Post card content -->
                     <div
-                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full group-hover:-translate-y-20 transition-transform duration-300"
+                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
                     >
                       <div class="flex justify-between text-xs mb-4">
                         <span class="font-bold">Bruce Willis</span>
@@ -439,7 +443,7 @@
 
                     <a
                       href="#"
-                      class="btn btn-gradient border-gray-a200 absolute group-hover:-translate-y-[72px] left-6 transition-transform"
+                      class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
                       >Read More</a
                     >
                   </a>
@@ -450,8 +454,10 @@
                   class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="relative">
-                    <div class="relative aspect-[570/420] w-[570px]">
+                  <a href="#" class="relative lg:overflow-hidden">
+                    <div
+                      class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
+                    >
                       <img
                         src="/images/post-2.jpg"
                         alt="blog post"
@@ -461,7 +467,7 @@
 
                     <!-- Post card content -->
                     <div
-                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full group-hover:-translate-y-20 transition-transform duration-300"
+                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
                     >
                       <div class="flex justify-between text-xs mb-4">
                         <span class="font-bold">Bruce Willis</span>
@@ -483,7 +489,7 @@
 
                     <a
                       href="#"
-                      class="btn btn-gradient border-gray-a200 absolute group-hover:-translate-y-[72px] left-6 transition-transform"
+                      class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
                       >Read More</a
                     >
                   </a>
@@ -494,8 +500,10 @@
                   class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="relative">
-                    <div class="relative aspect-[570/420] w-[570px]">
+                  <a href="#" class="absolute lf:overflow-hidden">
+                    <div
+                      class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
+                    >
                       <img
                         src="/images/post-3.jpg"
                         alt="blog post"
@@ -505,7 +513,7 @@
 
                     <!-- Post card content -->
                     <div
-                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full group-hover:-translate-y-20 transition-transform duration-300"
+                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
                     >
                       <div class="flex justify-between text-xs mb-4">
                         <span class="font-bold">Bruce Willis</span>
@@ -527,7 +535,7 @@
 
                     <a
                       href="#"
-                      class="btn btn-gradient border-gray-a200 absolute group-hover:-translate-y-[72px] left-6 transition-transform"
+                      class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
                       >Read More</a
                     >
                   </a>
@@ -536,6 +544,12 @@
 
               <div class="swiper-scrollbar bg-blue-25"></div>
             </div>
+
+            <a href="#" class="btn btn-gradient w-[calc(100%-32px)] mx-auto md:hidden"
+              >Descobrir Mais</a
+            >
+
+            <div class="h-screen hidden lg:flex absolute border-r border-r-blue-25 left-2/4"></div>
           </section>
         </div>
 
@@ -548,7 +562,7 @@
             >
               <!-- Subscribe section -->
               <div
-                class="justify-self-center self-center h-screen grid content-center lg:border-r lg:border-r-gray-a200 px-[42px]"
+                class="justify-self-center self-center h-screen grid content-center lg:border-r lg:border-r-gray-a200 lg:px-[42px]"
               >
                 <h2 class="uppercase text-7xl mb-4 font-secondary text-center">Newsletter</h2>
 

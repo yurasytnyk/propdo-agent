@@ -23,7 +23,7 @@
 
 @layer components {
   .btn {
-    @apply flex w-max leading-[22px] font-bold px-6 py-4 text-white rounded-25 border-2 transition-colors duration-300;
+    @apply flex justify-center w-max leading-[22px] font-bold px-6 py-4 text-white rounded-25 border-2 transition-colors duration-300;
   }
 
   .btn.btn-gradient {
