@@ -10,7 +10,7 @@
     <header>
       <!-- Navigation -->
       <nav
-        class="fixed z-20 top-8 left-2/4 -translate-x-2/4 container grid grid-cols-2 lg:grid-cols-[116px_1fr_max-content] items-center bg-blue-25 rounded-25 p-2 pl-6 mx-4 lg:mx-0 mb-[118px] border-blue-a300 border"
+        class="fixed z-20 top-8 left-2/4 -translate-x-2/4 container grid grid-cols-2 lg:grid-cols-[116px_1fr_max-content] items-center bg-blue-25 rounded-25 p-2 pl-6 lg:mx-0 mb-[118px] border-blue-a300 border"
       >
         <a href="/" class="flex items-end gap-2">
           <svg
@@ -105,7 +105,7 @@
     <div class="swiper vertical-slider h-full w-full">
       <main class="swiper-wrapper">
         <!-- Chart section -->
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-slide-theme="light">
           <section class="container mx-auto">
             <div
               class="grid grid-cols-1 lg:grid-cols-[minmax(0,533px)_1fr] lg:h-screen gap-4 lg:gap-[52px] border-l border-r border-blue-25"
@@ -208,7 +208,7 @@
           </section>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-slide-theme="dark">
           <!-- Como funciona? section -->
           <section class="bg-blue-100">
             <div class="container mx-auto relative text-white">
@@ -373,10 +373,10 @@
           </section>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-slide-theme="light">
           <!-- Imóvel Hub section -->
-          <section class="pt-8 pb-[152px] overflow-hidden">
-            <div class="container mx-auto">
+          <section class="container mx-auto h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25">
+            <div>
               <!-- Section title -->
               <div class="flex justify-between items-center pb-16">
                 <h2 class="text-7xl uppercase font-secondary">
@@ -387,7 +387,7 @@
               </div>
             </div>
 
-            <div class="swiper container overflow-visible">
+            <div class="swiper horizontal-slider container overflow-visible">
               <div class="swiper-wrapper container mx-auto">
                 <!-- Slide -->
                 <div class="swiper-slide w-[570px]">
@@ -503,13 +503,17 @@
           </section>
         </div>
 
-        <div class="swiper-slide">
+        <div class="swiper-slide" data-slide-theme="dark">
           <!-- Footer -->
-          <footer class="bg-blue-100 pt-8 pb-9 h-screen grid content-end">
+          <footer class="bg-blue-100">
             <!-- Footer main content -->
-            <div class="container mx-auto text-white grid grid-cols-2 gap-[42px] pb-17.5">
+            <div
+              class="h-screen container mx-auto text-white grid lg:grid-cols-2 border-l border-l-gray-a200 border-r border-r-gray-a200"
+            >
               <!-- Subscribe section -->
-              <div class="justify-self-center self-center max-w-[470px]">
+              <div
+                class="justify-self-center self-center h-screen grid content-center lg:border-r lg:border-r-gray-a200 px-[42px]"
+              >
                 <h2 class="uppercase text-7xl mb-4 font-secondary text-center">Newsletter</h2>
 
                 <p class="mb-8 text-center text-light-grey">
@@ -668,8 +672,8 @@
               </div>
 
               <!-- Footer nav -->
-              <nav class="grid grid-cols-2 grid-rows-[340px_160px_140px] font-medium text-gray-50">
-                <ul class="mb-8 flex flex-col gap-2 text-sm">
+              <nav class="grid grid-cols-2 content-center px-6 gap-8 font-medium text-gray-50">
+                <ul class="grid gap-2 text-sm">
                   <li class="mb-2 font-bold text-white text-base">
                     Valor do metro quadrado por bairro
                   </li>
@@ -708,7 +712,7 @@
                   </li>
                 </ul>
 
-                <ul class="mb-8 flex flex-col gap-2 text-sm">
+                <ul class="grid gap-2 mb-8 text-sm">
                   <li class="mb-2 font-bold text-white text-base">
                     Valor do metro quadrado por cidade
                   </li>
@@ -746,7 +750,7 @@
                   </li>
                 </ul>
 
-                <ul class="flex flex-col gap-2 text-sm self-center">
+                <ul class="grid gap-2 text-sm self-center">
                   <li class="mb-2 font-bold text-white text-base">Avaliação de Imóvel</li>
 
                   <li>
@@ -758,7 +762,7 @@
                   </li>
                 </ul>
 
-                <ul class="flex flex-col gap-2 text-sm">
+                <ul class="grid gap-2 text-sm">
                   <li class="mb-2 font-bold text-white text-base">
                     Simulador de Financiamento Imobiliário
                   </li>
@@ -772,7 +776,7 @@
                   </li>
                 </ul>
 
-                <ul class="flex flex-col gap-2 text-sm">
+                <ul class="grid gap-2 text-sm">
                   <li class="mb-2 font-bold text-white text-base">Sobre nós</li>
 
                   <li>
@@ -788,7 +792,7 @@
                   </li>
                 </ul>
 
-                <ul class="flex flex-col gap-2 text-sm self-center">
+                <ul class="grid gap-2 text-sm self-center">
                   <li class="mb-2 font-bold text-white text-base">Propdo</li>
 
                   <li>
@@ -804,21 +808,25 @@
 
             <!-- Bottom footer -->
             <div
-              class="flex justify-between items-center container mx-auto text-white pt-10 text-sm"
+              class="grid grid-cols-[1fr_repeat(2,minmax(0,585px))_1fr] justify-between items-center lg:-mt-24 border-t border-t-gray-a200 text-white text-sm"
             >
-              <div class="flex items-center gap-1">
+              <div
+                class="flex items-center gap-1 col-[2] py-10 pl-9 border-l border-l-gray-a200 lg:border-r lg:border-r-gray-a200"
+              >
                 <a href="#">Terms & Conditions</a>
                 <hr class="mx-2 h-4 border border-white" />
                 <a href="#">Privacy Policy</a>
               </div>
 
-              <p class="text-light-grey">&copy; AgentImovel 2024. All Rights Reserved.</p>
+              <p class="text-light-grey text-right py-10 pr-9 border-r border-r-gray-a200">
+                &copy; AgentImovel 2024. All Rights Reserved.
+              </p>
             </div>
           </footer>
         </div>
       </main>
 
-      <div class="swiper-pagination flex flex-col justify-center gap-2 w-8"></div>
+      <div class="swiper-pagination hidden xl:flex xl:flex-col xl:justify-center w-8"></div>
     </div>
 
     <script type="module" src="/src/js/main.js"></script>
