@@ -10,7 +10,7 @@
     <header>
       <!-- Navigation -->
       <nav
-        class="fixed z-20 top-8 left-2/4 -translate-x-2/4 container grid grid-cols-2 lg:grid-cols-[116px_1fr_max-content] items-center bg-blue-25 rounded-25 p-2 pl-6 lg:mx-0 mb-[118px] border-blue-a300 border"
+        class="w-[calc(100%-32px)] lg:container fixed z-20 top-8 left-2/4 -translate-x-2/4 grid grid-cols-2 lg:grid-cols-[116px_1fr_max-content] items-center bg-blue-25 rounded-25 p-2 pl-6 lg:mx-0 border-blue-a300 border"
       >
         <a href="/" class="flex items-end gap-2">
           <svg
@@ -108,32 +108,34 @@
         <div class="swiper-slide" data-slide-theme="light">
           <section class="container mx-auto">
             <div
-              class="grid grid-cols-1 lg:grid-cols-[minmax(0,533px)_1fr] lg:h-screen gap-4 lg:gap-[52px] border-l border-r border-blue-25"
+              class="grid grid-cols-1 lg:grid-cols-[minmax(0,533px)_1fr] lg:h-screen lg:gap-[52px] mx-4 lg:mx-0 border-l border-r border-blue-25"
             >
-              <div class="pt-8 lg:pt-0 mx-4 lg:mx-0 grid content-center">
+              <div class="pt-32 lg:pt-0 grid content-center">
                 <h2
                   class="mb-4 lg:mb-8 text-[40px] leading-[48px] lg:text-7xl uppercase flex gap-3 font-secondary"
                 >
                   <span class="text-blue-100">Mercado</span> Imobiliário
                 </h2>
 
-                <ol class="flex flex-col mb-8">
+                <ol class="flex flex-col mb-6 lg:mb-8">
                   <li
                     data-selected="true"
-                    class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer data-[selected=true]:bg-purple-25 rounded-5 group"
+                    class="grid grid-cols-[32px_1fr] lg:grid-cols-[48px_1fr] items-center gap-3 lg:gap-4 py-3 lg:py-6 px-2 lg:px-4 cursor-pointer data-[selected=true]:bg-purple-25 rounded-5 group"
                   >
                     <span
-                      class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center data-se group-data-[selected=true]:bg-purple-500 group-hover:bg-purple-500 group-data-[selected=true]:text-white group-hover:text-white transition-colors duration-300"
+                      class="bg-blue-25 text-blue-50 font-bold size-8 lg:size-12 rounded-full grid place-items-center data-se group-data-[selected=true]:bg-purple-500 group-hover:bg-purple-500 group-data-[selected=true]:text-white group-hover:text-white transition-colors duration-300"
                       >01</span
                     >
 
                     <div>
                       <h3
-                        class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold transition-colors duration-300"
+                        class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold text-sm lg:text-base transition-colors duration-300"
                       >
                         Estatísticas e Tendências
                       </h3>
-                      <p class="text-gray-400 text-sm">
+                      <p
+                        class="text-gray-400 text-xs lg:text-sm group-data-[selected=true]:block hidden lg:block"
+                      >
                         Todas as informações atualizadas sobre o mercado imobiliário de 2024 no
                         Brasil, incluindo o valor médio por metro quadrado em diferentes regiões e
                         bairros.
@@ -142,20 +144,22 @@
                   </li>
 
                   <li
-                    class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer rounded-5 group"
+                    class="grid grid-cols-[32px_1fr] lg:grid-cols-[48px_1fr] items-center gap-3 lg:gap-4 py-3 lg:py-6 px-2 lg:px-4 cursor-pointer rounded-5 group"
                   >
                     <span
-                      class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
+                      class="bg-blue-25 text-blue-50 font-bold size-8 lg:size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
                       >02</span
                     >
 
                     <div>
                       <h3
-                        class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold transition-colors duration-300"
+                        class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold text-sm lg:text-base transition-colors duration-300"
                       >
                         Valor do metro quadrado
                       </h3>
-                      <p class="text-gray-400 text-sm">
+                      <p
+                        class="text-gray-400 text-xs lg:text-sm group-data-[selected=true]:block hidden lg:block"
+                      >
                         Descubra o verdadeiro valor do metro quadrado para maximizar seus
                         investimentos imobiliários. Informação essencial para decisões inteligentes.
                       </p>
@@ -163,20 +167,22 @@
                   </li>
 
                   <li
-                    class="grid grid-cols-[48px_1fr] items-center gap-4 py-6 px-4 cursor-pointer rounded-5 group"
+                    class="grid grid-cols-[32px_1fr] lg:grid-cols-[48px_1fr] items-center gap-3 lg:gap-4 py-3 lg:py-6 px-2 lg:px-4 cursor-pointer rounded-5 group"
                   >
                     <span
-                      class="bg-blue-25 text-blue-50 font-bold size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
+                      class="bg-blue-25 text-blue-50 font-bold size-8 lg:size-12 rounded-full grid place-items-center group-hover:bg-purple-500 group-hover:text-white transition-colors duration-300"
                       >03</span
                     >
 
                     <div>
                       <h3
-                        class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold transition-colors duration-300"
+                        class="group-data-[selected=true]:text-purple-500 group-hover:text-purple-500 font-bold text-sm lg:text-base transition-colors duration-300"
                       >
                         Tabela de Preços de Avaliação de Imóveis
                       </h3>
-                      <p class="text-gray-400 text-sm">
+                      <p
+                        class="text-gray-400 text-xs lg:text-sm group-data-[selected=true]:block hidden lg:block"
+                      >
                         Tabela de preços de avaliação de imóveis atualizada, auxiliando compradores
                         e vendedores a entenderem o valor justo de suas propriedades.
                       </p>
@@ -187,9 +193,15 @@
                 <a href="#" class="btn btn-gradient hidden lg:flex">Mais Detalhes</a>
               </div>
 
-              <div class="border-l border-l-blue-25 grid content-center overflow-auto">
+              <h3
+                class="block lg:hidden pb-2 text-center text-sm lg:font-medium text-gray-400 border-b border-b-blue-25"
+              >
+                Índice de Imóveis 2024: Preços e Tendências:
+              </h3>
+
+              <div class="lg:border-l lg:border-l-blue-25 grid content-center overflow-auto">
                 <h3
-                  class="pb-6 mb-10 text-center font-medium text-gray-400 border-b border-b-blue-25"
+                  class="hidden lg:block pb-6 mb-10 text-center lg:font-medium text-gray-400 border-b border-b-blue-25"
                 >
                   Índice de Imóveis 2024: Preços e Tendências:
                 </h3>
@@ -378,22 +390,20 @@
           <section
             class="container mx-auto h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
           >
-            <div>
-              <!-- Section title -->
-              <div class="flex justify-between items-center pb-16">
-                <h2 class="text-7xl uppercase font-secondary">
-                  Imóvel <span class="text-blue-100">Hub</span>
-                </h2>
+            <!-- Section title -->
+            <div class="flex justify-between items-center lg:pb-16">
+              <h2 class="lg:text-7xl text-[40px] leading-[48px] uppercase font-secondary">
+                Imóvel <span class="text-blue-100">Hub</span>
+              </h2>
 
-                <a href="#" class="btn btn-gradient">Descobrir Mais</a>
-              </div>
+              <a href="#" class="btn btn-gradient">Descobrir Mais</a>
             </div>
 
             <div class="swiper horizontal-slider container overflow-visible">
               <div class="swiper-wrapper container mx-auto">
                 <!-- Slide -->
                 <div
-                  class="swiper-slide w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group overflow-hidden"
+                  class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
                   <a href="#" class="relative">
@@ -437,7 +447,7 @@
 
                 <!-- Slide -->
                 <div
-                  class="swiper-slide w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group overflow-hidden"
+                  class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
                   <a href="#" class="relative">
@@ -481,7 +491,7 @@
 
                 <!-- Slide -->
                 <div
-                  class="swiper-slide w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group overflow-hidden"
+                  class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
                   <a href="#" class="relative">
@@ -836,15 +846,13 @@
             <div
               class="grid grid-cols-[1fr_repeat(2,minmax(0,585px))_1fr] justify-between items-center lg:-mt-24 border-t border-t-gray-a200 text-white text-sm"
             >
-              <div
-                class="flex items-center gap-1 col-[2] py-10 pl-9 border-l border-l-gray-a200 lg:border-r lg:border-r-gray-a200"
-              >
+              <div class="flex items-center gap-1 col-[2] py-10 pl-9">
                 <a href="#">Terms & Conditions</a>
                 <hr class="mx-2 h-4 border border-white" />
                 <a href="#">Privacy Policy</a>
               </div>
 
-              <p class="text-light-grey text-right py-10 pr-9 border-r border-r-gray-a200">
+              <p class="text-light-grey text-right py-10 pr-9">
                 &copy; AgentImovel 2024. All Rights Reserved.
               </p>
             </div>
