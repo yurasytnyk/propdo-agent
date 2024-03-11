@@ -1,4 +1,4 @@
-import { getTailwindTheme } from "../get-tailwind-theme";
+import { getTailwindTheme } from "../get-tailwind-theme/get-tailwind-theme";
 
 export function updateCssVars(swiper) {
   const { colors } = getTailwindTheme();

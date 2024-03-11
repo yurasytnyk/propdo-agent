@@ -1,4 +1,4 @@
-import { getTailwindTheme } from "../get-tailwind-theme";
+import { getTailwindTheme } from "../utils/get-tailwind-theme/get-tailwind-theme";
 
 const { colors } = getTailwindTheme();
 

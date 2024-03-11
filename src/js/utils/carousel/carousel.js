@@ -3,7 +3,7 @@ import { Scrollbar, Keyboard } from "swiper/modules";
 
 export function initCarousel() {
   new Swiper(".horizontal-slider", {
-    slidesPerView: "auto",
+    slidesPerView: 2,
     direction: "horizontal",
     spaceBetween: 30,
     modules: [Scrollbar, Keyboard],
