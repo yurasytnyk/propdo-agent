@@ -108,7 +108,7 @@
         <div class="swiper-slide" data-slide-theme="light">
           <section class="container mx-auto">
             <div
-              class="grid grid-cols-1 lg:grid-cols-[minmax(0,533px)_1fr] lg:h-screen lg:gap-[52px] mx-4 lg:mx-0 border-l border-r border-blue-25"
+              class="grid grid-cols-1 xl:grid-cols-[minmax(0,533px)_1fr] xl:h-screen xl:gap-[52px] mx-4 xl:mx-0 pb-6 border-l border-r border-blue-25"
             >
               <div class="pt-32 lg:pt-0 grid content-center">
                 <h2
@@ -190,7 +190,7 @@
                   </li>
                 </ol>
 
-                <a href="#" class="btn btn-gradient hidden lg:flex">Mais Detalhes</a>
+                <a href="#" class="btn btn-gradient hidden xl:flex">Mais Detalhes</a>
               </div>
 
               <h3
@@ -207,7 +207,7 @@
                 </h3>
 
                 <div
-                  class="relative aspect-[585/459] w-[585px] after:content-[''] after:absolute after:bottom-14 after:w-full after:h-px after:bg-blue-25"
+                  class="relative aspect-[585/459] w-[585px] justify-self-center after:content-[''] after:absolute after:bottom-12 after:w-full after:h-px after:bg-blue-25"
                 >
                   <canvas id="chart"></canvas>
                 </div>
@@ -215,7 +215,7 @@
 
               <a
                 href="#"
-                class="btn btn-gradient flex lg:hidden justify-center px-24 mb-6 lg:mb-0 w-max mx-auto"
+                class="btn btn-gradient flex xl:hidden justify-center px-24 my-6 lg:mb-0 w-max mx-auto"
                 >Mais Detalhes</a
               >
             </div>
@@ -410,7 +410,7 @@
                   class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="absolute lg:overflow-hidden">
+                  <a href="#" class="absolute">
                     <div
                       class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
                     >
@@ -456,7 +456,7 @@
                   class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="relative lg:overflow-hidden">
+                  <a href="#" class="relative">
                     <div
                       class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
                     >
@@ -502,7 +502,7 @@
                   class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="absolute lf:overflow-hidden">
+                  <a href="#" class="absolute">
                     <div
                       class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
                     >
@@ -560,21 +560,23 @@
           <footer class="bg-blue-100">
             <!-- Footer main content -->
             <div
-              class="h-screen container mx-auto text-white grid lg:grid-cols-2 border-l border-l-gray-a200 border-r border-r-gray-a200"
+              class="lg:h-screen lg:container mx-4 lg:mx-auto text-white grid lg:grid-cols-2 border-l border-l-gray-a200 border-r border-r-gray-a200"
             >
               <!-- Subscribe section -->
               <div
-                class="justify-self-center self-center h-screen grid content-center lg:border-r lg:border-r-gray-a200 lg:px-[42px]"
+                class="justify-self-center self-center lg:h-screen grid content-center lg:border-r lg:border-r-gray-a200 lg:px-[42px] pt-32 lg:pt-0"
               >
-                <h2 class="uppercase text-7xl mb-4 font-secondary text-center">Newsletter</h2>
+                <h2 class="uppercase text-7xl mb-2 lg:mb-4 font-secondary text-center">
+                  Newsletter
+                </h2>
 
-                <p class="mb-8 text-center text-light-grey">
+                <p class="mb-6 lg:mb-8 text-center text-light-grey">
                   Subscribe to the newsletter and receive information about promotions and new
                   arrivals.
                 </p>
 
                 <!-- Subscribe input -->
-                <div class="relative grid mb-14">
+                <div class="relative grid mb-8 lg:mb-14">
                   <svg
                     width="16"
                     height="16"
@@ -617,7 +619,7 @@
                 </div>
 
                 <!-- Socials -->
-                <ul class="flex gap-4 items-center justify-center mb-14">
+                <ul class="flex gap-4 items-center justify-center mb-8 lg:mb-14">
                   <li>
                     <a
                       href="#"
@@ -724,7 +726,9 @@
               </div>
 
               <!-- Footer nav -->
-              <nav class="grid grid-cols-2 content-center px-6 gap-8 font-medium text-gray-50">
+              <nav
+                class="grid sm:grid-cols-2 content-center px-6 mt-10 mb-8 lg:my-0 gap-8 font-medium text-gray-50"
+              >
                 <ul class="grid gap-2 text-sm">
                   <li class="mb-2 font-bold text-white text-base">
                     Valor do metro quadrado por bairro
@@ -764,7 +768,7 @@
                   </li>
                 </ul>
 
-                <ul class="grid gap-2 mb-8 text-sm">
+                <ul class="grid gap-2 lg:mb-8 text-sm">
                   <li class="mb-2 font-bold text-white text-base">
                     Valor do metro quadrado por cidade
                   </li>
@@ -860,15 +864,17 @@
 
             <!-- Bottom footer -->
             <div
-              class="grid grid-cols-[1fr_repeat(2,minmax(0,585px))_1fr] justify-between items-center lg:-mt-24 border-t border-t-gray-a200 text-white text-sm"
+              class="mx-4 lg:mx-0 grid lg:grid-cols-[1fr_repeat(2,minmax(0,585px))_1fr] lg:text-left justify-center lg:justify-between items-center lg:-mt-24 border-t border-t-gray-a200 border-l border-r border-l-gray-a200 border-r-gray-a200 lg:border-l-0 lg:border-r-0 text-white text-sm"
             >
-              <div class="flex items-center gap-1 col-[2] py-10 pl-9">
+              <div
+                class="flex items-center justify-center lg:justify-start gap-1 lg:col-[2] pt-4 pb-2 lg:py-10 lg:pl-9"
+              >
                 <a href="#">Terms & Conditions</a>
                 <hr class="mx-2 h-4 border border-white" />
                 <a href="#">Privacy Policy</a>
               </div>
 
-              <p class="text-light-grey text-right py-10 pr-9">
+              <p class="text-light-grey text-right pb-8 lg:py-10 lg:pr-9">
                 &copy; AgentImovel 2024. All Rights Reserved.
               </p>
             </div>
