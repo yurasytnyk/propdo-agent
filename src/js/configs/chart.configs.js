@@ -70,7 +70,7 @@ export const chartPlugins = {
       pointStyle: "circle",
       font: {
         family: fontFamily.primary,
-        size: 12,
+        size: matchMedia("max-width: 1024px").matches ? 8 : 12,
       },
     },
   },
