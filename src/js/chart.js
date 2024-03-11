@@ -81,6 +81,9 @@ export function initChart(datasets) {
         },
       },
       plugins: {
+        tooltip: {
+          enabled: false,
+        },
         legend: {
           position: "bottom",
           labels: {
