@@ -3,6 +3,7 @@ import { initCarousel } from "./utils/carousel/carousel";
 
 import { chartMockData } from "./mocks/chart-mock-data";
 import { initScreenCarousel } from "./utils/screen-carousel/screen-carousel";
+import { initTestimonialsCarousel } from "./utils/testimonials-carousel/testimonials-carousel";
 
 import "swiper/css";
 import "swiper/css/scrollbar";
@@ -12,3 +13,4 @@ import "@/styles/main.css";
 initScreenCarousel();
 initChart(chartMockData);
 initCarousel();
+initTestimonialsCarousel();
