@@ -8,6 +8,9 @@ export default {
       },
     },
     extend: {
+      height: {
+        "min-56.25": "min(100vh, 900px)",
+      },
       fontFamily: {
         primary: ["Montserrat"],
         secondary: ["Bebas Neue"],
@@ -41,6 +44,7 @@ export default {
         17.5: "4.375rem",
       },
       margin: {
+        15: "3.75rem",
         22: "5.5rem",
       },
       borderRadius: {
