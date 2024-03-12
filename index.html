@@ -236,7 +236,7 @@
       </nav>
     </header>
 
-    <div class="swiper vertical-slider h-full w-full overflow-visible xl:overflow-hidden">
+    <div class="swiper vertical-slider h-full w-full overflow-visible overflow-x-hidden">
       <main class="swiper-wrapper block xl:flex h-auto xl:h-full">
         <!-- Chart section -->
         <div class="swiper-slide" data-slide-theme="light">
@@ -576,86 +576,38 @@
         <div class="swiper-slide" data-slide-theme="light">
           <!-- Imóvel Hub section -->
           <section
-            class="container mx-4 lg:mx-auto lg:h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
+            class="w-[calc(100%-32px)] container mx-4 lg:mx-auto lg:h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
           >
             <!-- Section title -->
             <div class="flex justify-between items-center py-16">
-              <h2
-                class="md:text-7xl text-[40px] leading-[48px] mb-8 md:mb-0 uppercase font-secondary"
-              >
+              <h2 class="md:text-7xl text-[40px] leading-[48px] uppercase font-secondary">
                 Imóvel <span class="text-blue-100">Hub</span>
               </h2>
 
               <a href="#" class="btn btn-gradient hidden md:flex">Descobrir Mais</a>
             </div>
 
-            <div class="swiper horizontal-slider container lg:overflow-visible">
-              <div class="swiper-wrapper container mx-auto">
+            <div class="swiper horizontal-slider container pb-16 lg:mb-0 xl:overflow-visible">
+              <div class="swiper-wrapper items-end lg:items-start container mx-auto pt-1">
                 <!-- Slide -->
                 <div
-                  class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
-                >
-                  <!-- Post card -->
-                  <a href="#" class="absolute">
-                    <div
-                      class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
-                    >
-                      <img
-                        src="/images/post-1.jpg"
-                        alt="blog post"
-                        class="absolute inset-0 rounded-5"
-                      />
-                    </div>
-
-                    <!-- Post card content -->
-                    <div
-                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
-                    >
-                      <div class="flex justify-between text-xs mb-4">
-                        <span class="font-bold">Bruce Willis</span>
-
-                        <span>September 20, 2023</span>
-                      </div>
-
-                      <div>
-                        <h3 class="font-bold mb-2">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-                        </h3>
-
-                        <p class="text-sm">
-                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-                          Quisque volutpat mattis eros. Nullam malesuada erat ut turpis...
-                        </p>
-                      </div>
-                    </div>
-
-                    <a
-                      href="#"
-                      class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
-                      >Read More</a
-                    >
-                  </a>
-                </div>
-
-                <!-- Slide -->
-                <div
-                  class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
+                  class="swiper-slide h-auto rounded-5 hover:lg:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
                   <a href="#" class="relative">
                     <div
-                      class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
+                      class="relative aspect-[345/348] sm:aspect-[570/420] post-image-wrapper transition-all duration-300"
                     >
                       <img
-                        src="/images/post-2.jpg"
+                        src="/images/post-1.jpg"
                         alt="blog post"
-                        class="absolute inset-0 rounded-5"
+                        class="absolute inset-0 rounded-5 h-full object-cover"
                       />
                     </div>
 
                     <!-- Post card content -->
                     <div
-                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
+                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 w-[calc(100%-32px)] lg:group-hover:-translate-y-20 transition-transform duration-300"
                     >
                       <div class="flex justify-between text-xs mb-4">
                         <span class="font-bold">Bruce Willis</span>
@@ -664,7 +616,7 @@
                       </div>
 
                       <div>
-                        <h3 class="font-bold mb-2">
+                        <h3 class="font-bold mb-2 text-sm lg:text-base">
                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
                         </h3>
 
@@ -685,23 +637,23 @@
 
                 <!-- Slide -->
                 <div
-                  class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
+                  class="swiper-slide h-auto rounded-5 hover:lg:-translate-y-4 transition-all duration-300 group"
                 >
                   <!-- Post card -->
-                  <a href="#" class="absolute">
+                  <a href="#" class="relative">
                     <div
-                      class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]"
+                      class="aspect-[345/348] sm:aspect-[570/420] post-image-wrapper transition-all duration-300"
                     >
                       <img
-                        src="/images/post-3.jpg"
+                        src="/images/post-2.jpg"
                         alt="blog post"
-                        class="absolute inset-0 rounded-5"
+                        class="absolute inset-0 rounded-5 h-full object-cover"
                       />
                     </div>
 
                     <!-- Post card content -->
                     <div
-                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
+                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 w-[calc(100%-32px)] lg:group-hover:-translate-y-20 transition-transform duration-300"
                     >
                       <div class="flex justify-between text-xs mb-4">
                         <span class="font-bold">Bruce Willis</span>
@@ -710,7 +662,53 @@
                       </div>
 
                       <div>
-                        <h3 class="font-bold mb-2">
+                        <h3 class="font-bold mb-2 text-sm lg:text-base">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                        </h3>
+
+                        <p class="text-sm">
+                          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+                          Quisque volutpat mattis eros. Nullam malesuada erat ut turpis...
+                        </p>
+                      </div>
+                    </div>
+
+                    <a
+                      href="#"
+                      class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
+                      >Read More</a
+                    >
+                  </a>
+                </div>
+
+                <!-- Slide -->
+                <div
+                  class="swiper-slide h-auto rounded-5 hover:lg:-translate-y-4 transition-all duration-300 group"
+                >
+                  <!-- Post card -->
+                  <a href="#" class="relative">
+                    <div
+                      class="relative aspect-[345/348] sm:aspect-[570/420] post-image-wrapper transition-all duration-300"
+                    >
+                      <img
+                        src="/images/post-3.jpg"
+                        alt="blog post"
+                        class="absolute inset-0 rounded-5 h-full object-cover"
+                      />
+                    </div>
+
+                    <!-- Post card content -->
+                    <div
+                      class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 w-[calc(100%-32px)] lg:group-hover:-translate-y-20 transition-transform duration-300"
+                    >
+                      <div class="flex justify-between text-xs mb-4">
+                        <span class="font-bold">Bruce Willis</span>
+
+                        <span>September 20, 2023</span>
+                      </div>
+
+                      <div>
+                        <h3 class="font-bold mb-2 text-sm lg:text-base">
                           Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
                         </h3>
 
@@ -730,10 +728,10 @@
                 </div>
               </div>
 
-              <div class="swiper-scrollbar bg-blue-25"></div>
+              <div class="swiper-scrollbar !relative -mt-4 lg:mt-0 bg-blue-25"></div>
             </div>
 
-            <a href="#" class="btn btn-gradient w-[calc(100%-32px)] mx-auto mb-15 md:mb-0 md:hidden"
+            <a href="#" class="btn btn-gradient w-[calc(100%-32px)] mx-auto mb-16 md:mb-0 md:hidden"
               >Descobrir Mais</a
             >
 

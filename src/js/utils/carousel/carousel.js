@@ -5,7 +5,6 @@ import { carouselBreakpoints } from "../../configs/carousel.configs";
 
 export function initCarousel() {
   new Swiper(".horizontal-slider", {
-    slidesPerView: 2,
     direction: "horizontal",
     spaceBetween: 30,
     modules: [Scrollbar, Keyboard],
@@ -16,7 +15,7 @@ export function initCarousel() {
       el: ".swiper-scrollbar",
       hide: true,
       draggable: true,
-      dragSize: 380,
+      dragSize: matchMedia("(max-width: 1024px)").matches ? 112 : 380,
     },
     breakpoints: carouselBreakpoints,
   });

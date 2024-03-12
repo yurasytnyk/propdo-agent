@@ -49,3 +49,7 @@
     @apply pl-12;
   }
 }
+
+.swiper-slide.swiper-slide-active .post-image-wrapper {
+  @apply aspect-[345/383] sm:aspect-[570/420];
+}
