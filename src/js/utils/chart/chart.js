@@ -24,6 +24,9 @@ export function initChart(datasets) {
       datasets,
     },
     options: {
+      hover: {
+        axis: "x",
+      },
       responsive: true,
       maintainAspectRatio: false,
       scales: {
