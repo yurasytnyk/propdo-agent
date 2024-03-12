@@ -38,10 +38,14 @@
   }
 
   .input {
-    @apply rounded-25 placeholder:text-sm placeholder:font-medium text-black hover:ring-inset hover:ring-2 transition-all duration-300;
+    @apply border border-gray-50 rounded-25 placeholder:text-sm placeholder:font-medium text-black hover:ring-inset hover:ring-2 transition-all duration-300;
   }
 
   .input.input-medium {
-    @apply h-14 py-5 pl-12 pr-6;
+    @apply h-14 py-5 px-6;
+  }
+
+  .input-subscribe.input-medium {
+    @apply pl-12;
   }
 }
