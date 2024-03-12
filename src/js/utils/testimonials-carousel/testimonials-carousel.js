@@ -9,6 +9,7 @@ export function initTestimonialsCarousel() {
     direction: "horizontal",
     spaceBetween: 30,
     modules: [Scrollbar, Keyboard],
+    grabCursor: true,
     keyboard: {
       enabled: true,
     },
