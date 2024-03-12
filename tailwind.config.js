@@ -11,6 +11,9 @@ export default {
       height: {
         "min-56.25": "min(100vh, 900px)",
       },
+      fontSize: {
+        xxs: "0.5rem",
+      },
       fontFamily: {
         primary: ["Montserrat"],
         secondary: ["Bebas Neue"],

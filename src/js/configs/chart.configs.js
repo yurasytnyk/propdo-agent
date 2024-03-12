@@ -61,17 +61,6 @@ export const chartPlugins = {
     enabled: false,
   },
   legend: {
-    position: "bottom",
-    labels: {
-      padding: 45,
-      boxWidth: 16,
-      boxHeight: 16,
-      usePointStyle: true,
-      pointStyle: "circle",
-      font: {
-        family: fontFamily.primary,
-        size: matchMedia("max-width: 1024px").matches ? 8 : 12,
-      },
-    },
+    display: false,
   },
 };

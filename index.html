@@ -110,7 +110,7 @@
             <div
               class="grid grid-cols-1 xl:grid-cols-[minmax(0,533px)_1fr] xl:h-screen xl:gap-[52px] mx-4 xl:mx-0 lg:pb-6 border-l border-r border-blue-25"
             >
-              <div class="pt-32 lg:pt-0 grid content-center">
+              <div class="pt-32 xl:pt-0 grid content-center">
                 <h2
                   class="mb-4 lg:mb-8 text-[40px] leading-[48px] lg:text-7xl uppercase flex gap-3 font-secondary"
                 >
@@ -193,6 +193,7 @@
                 <a href="#" class="btn btn-gradient hidden xl:flex">Mais Detalhes</a>
               </div>
 
+              <!-- Render conditionally on desktop and mobile -->
               <h3
                 class="block lg:hidden pb-2 text-center text-sm lg:font-medium text-gray-400 border-b border-b-blue-25"
               >
@@ -200,19 +201,70 @@
               </h3>
 
               <div class="lg:border-l lg:border-l-blue-25 grid content-center overflow-auto">
+                <!-- Render conditionally on desktop and mobile -->
                 <h3
                   class="hidden lg:block pb-6 mb-10 text-center lg:font-medium text-gray-400 border-b border-b-blue-25"
                 >
                   Índice de Imóveis 2024: Preços e Tendências:
                 </h3>
 
-                <div
-                  class="relative aspect-[585/459] w-[585px] justify-self-center after:content-[''] after:absolute after:bottom-12 after:w-full after:h-px after:bg-blue-25"
-                >
+                <!-- Chart -->
+                <div class="relative aspect-[585/459] w-[585px] justify-self-center">
                   <canvas id="chart"></canvas>
                 </div>
+
+                <!-- Chart legend. Render conditionally on desktop and mobile -->
+                <ul
+                  class="hidden lg:flex gap-2 lg:gap-8 sm:justify-center border-t border-t-blue-25 pt-2 lg:pt-6"
+                >
+                  <li>
+                    <button
+                      class="relative text-xs font-medium after:content-[''] after:absolute after:-left-5 after:top-2/4 after:-translate-y-2/4 after:size-[10px] lg:after:size-4 after:bg-blue-100 after:rounded-full"
+                    >
+                      Valores para aluguel
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="relative text-xs font-medium after:content-[''] after:absolute after:-left-5 after:top-2/4 after:-translate-y-2/4 after:size-[10px] lg:after:size-4 after:bg-blue-75 after:rounded-full"
+                    >
+                      Valores para venda
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="relative text-xs font-medium after:content-[''] after:absolute after:-left-5 after:top-2/4 after:-translate-y-2/4 after:size-[10px] lg:after:size-4 after:bg-blue-15 after:rounded-full"
+                    >
+                      valor m2 por região
+                    </button>
+                  </li>
+                </ul>
               </div>
 
+              <!-- Chart legend. Render conditionally on desktop and mobile -->
+              <ul class="flex lg:hidden justify-center border-t border-t-blue-25 pt-2 lg:pt-6">
+                <li class="mx-8 sm:ml-0">
+                  <button
+                    class="relative text-xxs sm:text-xs font-medium after:content-[''] after:absolute after:-left-5 after:top-2/4 after:-translate-y-2/4 after:size-[10px] lg:after:size-4 after:bg-blue-100 after:rounded-full"
+                  >
+                    Valores para aluguel
+                  </button>
+                </li>
+                <li class="mr-8">
+                  <button
+                    class="relative text-xxs sm:text-xs font-medium after:content-[''] after:absolute after:-left-5 after:top-2/4 after:-translate-y-2/4 after:size-[10px] lg:after:size-4 after:bg-blue-75 after:rounded-full"
+                  >
+                    Valores para venda
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="relative text-xxs sm:text-xs font-medium after:content-[''] after:absolute after:-left-5 after:top-2/4 after:-translate-y-2/4 after:size-[10px] lg:after:size-4 after:bg-blue-15 after:rounded-full"
+                  >
+                    valor m2 por região
+                  </button>
+                </li>
+              </ul>
               <a
                 href="#"
                 class="btn btn-gradient flex xl:hidden justify-center px-24 my-6 lg:mb-0 w-max mx-auto"
