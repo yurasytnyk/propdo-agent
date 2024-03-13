@@ -34,6 +34,9 @@ export default {
         green: {
           100: "#04D37B",
         },
+        red: {
+          100: "#EB5757",
+        },
         purple: {
           25: "rgba(187, 66, 245, 0.06)",
           500: "#BB42F5",
@@ -44,7 +47,6 @@ export default {
           50: "#CDD1DF",
           400: "#868899",
         },
-        "light-grey": "#CDD1DF",
       },
       padding: {
         17.5: "4.375rem",
