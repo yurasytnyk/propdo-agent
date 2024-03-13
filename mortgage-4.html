@@ -5,6 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Propdo</title>
+    <!-- Import style -->
+    <link rel="stylesheet" href="//unpkg.com/element-plus/dist/index.css" />
+    <!-- Import Vue 3 -->
+    <script src="//unpkg.com/vue@3"></script>
+    <!-- Import component library -->
+    <script src="//unpkg.com/element-plus"></script>
   </head>
   <body class="font-primary" id="app">
     <header>
@@ -268,12 +274,26 @@
           ></div>
         </div>
 
-        <div class="absolute bottom-0 w-full py-6 bg-white bg-opacity-90 backdrop-blur-sm">
-          <p class="text-green-100 text-xs font-bold text-center">
+        <div
+          class="absolute bottom-0 w-full pt-6 pb-12 bg-white bg-opacity-90 backdrop-blur-sm border-t border-t-blue-25"
+        >
+          <p class="text-green-100 text-xs font-bold text-center mb-4">
             Falta pouco para você garantir sua proposta de financiamento completa!
           </p>
 
-          <div role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+          <div class="container mx-auto">
+            <el-progress
+              :percentage="100"
+              :stroke-width="8"
+              :text-inside="true"
+              style="--el-color-primary: #04d37b; --el-border-color-lighter: rgba(4, 211, 123, 0.2)"
+            >
+              <template #default="{ percentage }">
+                <span class="percentage-value">{{ percentage }}%</span>
+                <span class="absolute top-px right-px flex size-1.5 bg-white rounded-full"></span>
+              </template>
+            </el-progress>
+          </div>
         </div>
       </section>
 

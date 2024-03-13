@@ -14,3 +14,23 @@ initScreenCarousel();
 initChart(chartMockData);
 initCarousel();
 initTestimonialsCarousel();
+
+const App = {
+  data() {
+    return {
+      options: [{ label: "1", value: 1 }],
+      value2: [1, 10],
+      marks: {
+        0: "1",
+        5: "5",
+        10: "10",
+      },
+      checked: false,
+      checked1: false,
+    };
+  },
+};
+
+const app = Vue.createApp(App);
+app.use(ElementPlus);
+app.mount("#app");
