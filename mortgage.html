@@ -252,7 +252,10 @@
         </h1>
 
         <div class="grid grid-cols-3">
-          <el-form label-position="left" class="flex flex-col gap-6 px-6 justify-self-center w-full">
+          <el-form
+            label-position="left"
+            class="flex flex-col gap-6 px-6 justify-self-center w-full"
+          >
             <el-form-item label="Como vamos ajudar você?" class="flex-col mb-0">
               <el-select
                 v-model="value"
@@ -272,7 +275,7 @@
               </el-select>
             </el-form-item>
 
-            <div>
+            <div class="text-sm">
               <label for="" class="flex items-center gap-2 mb-2 text-gray-400">
                 <span
                   ><svg
@@ -295,7 +298,7 @@
               <input type="text" class="input input-small w-full" placeholder="R$" />
             </div>
 
-            <div class="w-full">
+            <div class="w-full text-sm">
               <label for="" class="flex items-center gap-2 mb-2 text-gray-400">
                 <span
                   ><svg
@@ -1754,6 +1757,129 @@
         </div>
       </footer>
     </main>
+
+    <!-- Compare section -->
+    <aside
+      class="fixed top-0 bottom-0 right-0 z-20 bg-white bg-opacity-90 backdrop-blur-sm pt-14 pb-8 w-[720px]"
+    >
+      <div class="grid grid-cols-[24px_1fr] items-center mb-8 px-4">
+        <button>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13.4143 12L18.7073 6.70695C19.0983 6.31695 19.0983 5.68301 18.7073 5.29301C18.3163 4.90201 17.6842 4.90201 17.2933 5.29301L12.0003 10.586L6.70725 5.29301C6.31625 4.90201 5.68425 4.90201 5.29325 5.29301C4.90225 5.68301 4.90225 6.31695 5.29325 6.70695L10.5862 12L5.29325 17.293C4.90225 17.683 4.90225 18.3169 5.29325 18.7069C5.48825 18.9019 5.74425 19 6.00025 19C6.25625 19 6.51225 18.9019 6.70725 18.7069L12.0003 13.414L17.2933 18.7069C17.4882 18.9019 17.7443 19 18.0003 19C18.2563 19 18.5123 18.9019 18.7073 18.7069C19.0983 18.3169 19.0983 17.683 18.7073 17.293L13.4143 12Z"
+              fill="#2E67DE"
+            />
+          </svg>
+        </button>
+
+        <h2 class="font-bold text-xl text-center">Compare as taxas dos bancos em um só lugar!</h2>
+      </div>
+
+      <table class="text-xs">
+        <thead class="text-gray-400">
+          <tr>
+            <th
+              scope="col"
+              class="border border-l-0 border-blue-25 max-w-[120px] min-w-[120px] h-20 border-b border-b-blue-25"
+            >
+              Bank
+            </th>
+            <th
+              scope="col"
+              class="border border-blue-25 max-w-[120px] min-w-[120px] h-20 border-b border-b-blue-25"
+            >
+              Potencial de compra
+            </th>
+            <th
+              scope="col"
+              class="border border-blue-25 max-w-[120px] min-w-[120px]h-20 border-b border-b-blue-25"
+            >
+              Valor de financiamento máximo
+            </th>
+            <th
+              scope="col"
+              class="border border-blue-25 max-w-[120px] min-w-[120px] h-20 border-b border-b-blue-25"
+            >
+              Taxa de juros à partir de
+            </th>
+            <th
+              scope="col"
+              class="border border-blue-25 max-w-[120px] min-w-[120px] h-20 border-b border-b-blue-25"
+            >
+              Parcelas
+            </th>
+            <th
+              scope="col"
+              class="border border-blue-25 max-w-[120px] min-w-[120px] h-20 border-b border-b-blue-25"
+            >
+              Primeira parcela
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="border-b border-dashed border-blue-25">
+            <th scope="row" class="border-r border-blue-25 font-bold p-4">Banco BRB</th>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 192.508,00</td>
+            <td class="border-r border-blue-25p-4 text-center">R$ 42.508,00</td>
+            <td class="border-r border-blue-25 text-green-100 font-bold p-4 text-center">9.37</td>
+            <td class="border-r border-blue-25 p-4 text-center">360</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 351,00</td>
+          </tr>
+
+          <tr class="border-b border-dashed border-blue-25">
+            <th scope="row" class="border-r border-blue-25 font-bold">Bradesco</th>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 189.064,00</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 39.064,00</td>
+            <td class="border-r border-blue-25 text-yellow-100 font-bold p-4 text-center">10.49</td>
+            <td class="border-r border-blue-25 p-4 text-center">360</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 393,00</td>
+          </tr>
+
+          <tr class="border-b border-dashed border-blue-25">
+            <th scope="row" class="border-r border-blue-25 font-bold p-4">Caixa</th>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 190.824,00</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 40.824,00</td>
+            <td class="border-r border-blue-25 text-yellow-100 font-bold p-4 text-center">9.89</td>
+            <td class="border-r border-blue-25 p-4 text-center">360</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 371,00</td>
+          </tr>
+
+          <tr class="border-b border-dashed border-blue-25">
+            <th scope="row" class="border-r border-blue-25 font-bold p-4">Inter</th>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 186.429,00</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 36.429,00</td>
+            <td class="border-r border-blue-25 text-red-100 font-bold p-4 text-center">11.49</td>
+            <td class="border-r border-blue-25 p-4 text-center">360</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 430,00</td>
+          </tr>
+
+          <tr class="border-b border-dashed border-blue-25">
+            <th scope="row" class="border-r border-blue-25 font-bold p-4">Itaú</th>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 186.429,00</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 36.429,00</td>
+            <td class="border-r border-blue-25 text-yellow-100 font-bold p-4 text-center">10.49</td>
+            <td class="border-r border-blue-25 p-4 text-center">360</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 430,00</td>
+          </tr>
+
+          <tr>
+            <th scope="row" class="border-r border-blue-25 font-bold p-4">Santander</th>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 189.036,00</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 39.036,00</td>
+            <td class="border-r border-blue-25 text-yellow-100 font-bold p-4 text-center">10.50</td>
+            <td class="border-r border-blue-25 p-4 text-center">360</td>
+            <td class="border-r border-blue-25 p-4 text-center">R$ 393,00</td>
+          </tr>
+        </tbody>
+      </table>
+    </aside>
 
     <script type="module" src="/src/js/main.js"></script>
   </body>
