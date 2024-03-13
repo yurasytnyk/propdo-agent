@@ -248,8 +248,10 @@
         <div
           class="container mx-auto grid grid-cols-3 h-screen border-l border-r border-l-blue-25 border-r-blue-25"
         >
-          <div class="col-start-2 row-start-1 grid self-center">
-            <h1 class="font-secondary text-7xl text-center mb-12">
+          <div class="col-start-2 row-start-1 grid self-center relative">
+            <h1
+              class="font-secondary text-7xl text-center mb-12 absolute left-2/4 -top-24 -translate-x-2/4 min-w-max"
+            >
               Simulador de <span class="text-blue-100">Financiamento</span>
             </h1>
 
@@ -282,7 +284,8 @@
                 class="input input-small w-full"
               />
 
-              <el-form-item label="Telefone" class="flex-col mb-0">
+              <div class="flex flex-col gap-2 text-sm">
+                <label for="phone" class="flex-col mb-0">Telefone</label>
                 <input
                   type="text"
                   name="phone"
@@ -290,14 +293,13 @@
                   placeholder="Ex. 0733002300"
                   class="input input-small w-full"
                 />
-              </el-form-item>
+              </div>
 
               <div class="flex flex-col">
-                <div>
+                <div class="mb-4">
                   <el-checkbox
                     v-model="checked"
                     label="Concordo com os termos de uso e política de privacidade"
-                    size="large"
                   />
                 </div>
 
@@ -305,7 +307,6 @@
                   <el-checkbox
                     v-model="checked1"
                     label="Confirmo que um representante da Agente entrará em contato comigo"
-                    size="large"
                   />
                 </div>
               </div>

@@ -243,21 +243,21 @@
     </header>
 
     <main class="overflow-x-hidden">
-      <!-- Mortgage step 3 -->
+      <!-- Mortgage step 2 -->
       <section>
         <div
           class="container mx-auto grid content-center h-screen border-l border-r border-l-blue-25 border-r-blue-25"
         >
           <h1 class="font-secondary text-7xl text-center mb-12">
-            Simulador de <span class="text-blue-100">Financiamento Imobiliário</span>
+            Simulador de <span class="text-blue-100">Financiamento</span>
           </h1>
 
           <el-form label-position="left" class="grid grid-cols-3 justify-self-center mb-12">
             <!-- 1 col -->
             <div class="px-6 flex flex-col gap-6 text-sm">
-              <el-form-item class="flex-col">
+              <el-form-item class="flex-col mb-2.5">
                 <template #label>
-                  <div class="flex items-center">
+                  <div class="flex items-center text-nowrap text-black">
                     <svg
                       width="16"
                       height="16"
@@ -292,7 +292,12 @@
                 />
               </el-form-item>
 
-              <el-form-item label="Como gostaria de ser contatado?" class="flex-col mb-0">
+              <el-form-item
+                label="Qual é seu estado civil?"
+                :required="true"
+                class="flex-col mb-0"
+                style="--el-text-color-regular: black"
+              >
                 <el-select
                   v-model="value"
                   placeholder="Select"
@@ -367,9 +372,9 @@
 
             <!-- 2 col -->
             <div class="px-6 flex flex-col gap-6 text-sm">
-              <el-form-item class="flex-col">
+              <el-form-item class="flex-col mb-2.5">
                 <template #label>
-                  <div class="flex items-center">
+                  <div class="flex items-center text-nowrap text-black">
                     <svg
                       width="16"
                       height="16"
@@ -383,8 +388,7 @@
                       />
                     </svg>
 
-                    <span class="text-red-100 ml-2">*</span>
-                    Confirme o valor do imóvel
+                    <span class="text-red-100 ml-2">*</span>Quanto que você tem para dar de entrada?
                   </div>
                 </template>
 
@@ -405,7 +409,7 @@
               </el-form-item>
 
               <div class="flex flex-col">
-                <label for="" class="flex items-center gap-2 mb-2 text-gray-400">
+                <label for="" class="flex items-center gap-2 mb-2">
                   <span
                     ><svg
                       width="16"
@@ -433,7 +437,12 @@
                 />
               </div>
 
-              <el-form-item label="Como gostaria de ser contatado?" class="flex-col mb-0">
+              <el-form-item
+                label="Tipo de trabalho"
+                :required="true"
+                class="flex-col mb-0"
+                style="--el-text-color-regular: black"
+              >
                 <el-select
                   v-model="value"
                   placeholder="Select"
@@ -452,7 +461,12 @@
                 </el-select>
               </el-form-item>
 
-              <el-form-item label="Como gostaria de ser contatado?" class="flex-col mb-0">
+              <el-form-item
+                label="Sua conta principal é associada a qual banco?"
+                :required="true"
+                class="flex-col mb-0"
+                style="--el-text-color-regular: black"
+              >
                 <el-select
                   v-model="value"
                   placeholder="Select"
@@ -471,7 +485,12 @@
                 </el-select>
               </el-form-item>
 
-              <el-form-item label="Como gostaria de ser contatado?" class="flex-col mb-0">
+              <el-form-item
+                label="Como vamos ajudar você?"
+                :required="true"
+                class="flex-col mb-0"
+                style="--el-text-color-regular: black"
+              >
                 <el-select
                   v-model="value"
                   placeholder="Select"

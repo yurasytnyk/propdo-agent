@@ -16,11 +16,16 @@
     --swiper-pagination-bullet-horizontal-gap: 0;
     --swiper-scrollbar-drag-bg-color: #2e67de;
     --swiper-pagination-bullet-inactive-color: #2e67de;
+    --el-text-color-regular: black;
   }
 
   html,
   body {
     @apply relative h-full;
+  }
+
+  th {
+    @apply font-medium;
   }
 }
 
@@ -84,5 +89,25 @@
 }
 
 .el-slider__button {
-  border: solid 3px var(--el-slider-main-bg-color)
+  border: solid 3px var(--el-slider-main-bg-color);
+}
+
+.el-checkbox {
+  @apply font-normal text-wrap;
+}
+
+.el-checkbox__inner {
+  --el-checkbox-checked-bg-color: #2e67de;
+  --el-checkbox-checked-input-border-color: #2e67de;
+  --el-checkbox-input-width: 18px;
+  --el-checkbox-input-height: 18px;
+  --el-checkbox-border-radius: 4px;
+}
+
+.el-checkbox__inner::after {
+  @apply top-0.5 left-1.5;
+}
+
+.el-checkbox__input.is-checked + .el-checkbox__label {
+  --el-checkbox-checked-text-color: black;
 }
