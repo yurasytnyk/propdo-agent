@@ -30,7 +30,7 @@
   }
 
   .btn.btn-gradient {
-    @apply bg-gradient-to-r from-blue-100 to-purple-500;
+    @apply border-none bg-gradient-to-r from-blue-100 to-purple-500;
   }
 
   .btn.btn-primary {
@@ -42,7 +42,7 @@
   }
 
   .input {
-    @apply border outline-none border-gray-50 rounded-25 placeholder:text-sm placeholder:font-medium text-black hover:ring-inset hover:ring-2 transition-all duration-300;
+    @apply border outline-none border-gray-50 focus:border-transparent focus:ring-2 focus:ring-inset rounded-25 placeholder:text-sm placeholder:font-medium text-black hover:ring-inset hover:ring-2 transition-all duration-300;
   }
 
   .input.input-medium {
@@ -58,6 +58,31 @@
   }
 }
 
+/* TODO: Move below styles to Vue SFC components */
 .swiper-slide.swiper-slide-active .post-image-wrapper {
   @apply aspect-[345/383] sm:aspect-[570/420];
+}
+
+.el-select__wrapper {
+  @apply py-4 px-6;
+}
+
+.el-select__wrapper.is-focused {
+  @apply ring-2 ring-inset;
+}
+
+.el-select__placeholder {
+  @apply font-medium;
+}
+
+.el-progress-bar__innerText {
+  @apply font-bold text-sm text-green-100 mt-2 -mx-4;
+}
+
+.el-progress-bar__outer {
+  @apply overflow-visible;
+}
+
+.el-slider__button {
+  border: solid 3px var(--el-slider-main-bg-color)
 }
