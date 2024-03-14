@@ -281,6 +281,7 @@
                   effect="dark"
                   content="Você pode somar a sua renda com a de mais uma pessoa que também será resonsável e beneficiada com o financiamento, independente do grau de parentesco."
                   placement="bottom-start"
+                  popper-class="tooltip"
                   :show-arrow="false"
                 >
                   <span
@@ -312,6 +313,7 @@
                   effect="dark"
                   content="Você pode somar a sua renda com a de mais uma pessoa que também será resonsável e beneficiada com o financiamento, independente do grau de parentesco."
                   placement="bottom-start"
+                  popper-class="tooltip"
                   :show-arrow="false"
                 >
                   <span
@@ -773,8 +775,8 @@
         </div>
 
         <!-- Testimonials carousel -->
-        <div class="swiper testimonials-slider container xl:overflow-visible">
-          <div class="swiper-wrapper container mx-auto">
+        <div class="swiper testimonials-slider container xl:overflow-visible pb-6 lg:pb-0">
+          <div class="swiper-wrapper">
             <!-- Testimonial card -->
             <article
               class="swiper-slide flex flex-col gap-6 rounded-5 border border-gray-50 p-6 text-sm italic bg-white"
@@ -1269,7 +1271,7 @@
             </article>
           </div>
 
-          <div class="swiper-scrollbar bg-blue-25"></div>
+          <div class="swiper-scrollbar bg-blue-25 !bottom-0"></div>
         </div>
 
         <div class="h-screen hidden lg:flex absolute -z-1 border-r border-r-blue-25 left-2/4"></div>
@@ -1277,7 +1279,7 @@
 
       <!-- Imóvel Hub section -->
       <section
-        class="w-[calc(100%-32px)] container mx-4 lg:mx-auto py-20 lg:py-30 lg:h-screen grid content-center border-l border-r border-blue-25"
+        class="w-[calc(100%-32px)] container mx-4 lg:mx-auto py-20 lg:py-30 grid grid-rows-[92px_500px] content-center border-l border-r border-blue-25"
       >
         <!-- Section title -->
         <div class="flex justify-between items-center mb-8 lg:mb-14">
@@ -1286,7 +1288,7 @@
               Imóvel <span class="text-blue-100">Hub</span>
             </h2>
 
-            <h3 class="text-gray-400">
+            <h3 class="text-gray-400 text-sm">
               INTRO Descubra o passo a passo para financiar a compra de um imóvel.
             </h3>
           </div>

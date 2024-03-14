@@ -246,15 +246,18 @@
       <!-- Mortgage step 2 -->
       <section>
         <div
-          class="container mx-auto grid content-center h-screen border-l border-r border-l-blue-25 border-r-blue-25"
+          class="w-[calc(100%-32px)] xl:container mx-4 xl:mx-auto grid grid-cols-1 xl:grid-cols-3 grid-rows-[max(15vh,150px)] xl:grid-rows-[min(15vh,200px)_100px_1fr_48px] content-start h-screen border-l border-r border-blue-25"
         >
-          <h1 class="font-secondary text-7xl text-center mb-12">
+          <h1 class="row-start-2 col-start-1 col-span-4 z-1 font-secondary text-7xl text-center">
             Simulador de <span class="text-blue-100">Financiamento</span>
           </h1>
 
-          <el-form label-position="left" class="grid grid-cols-3 justify-self-center mb-12">
+          <el-form
+            label-position="left"
+            class="w-full grid grid-cols-1 xl:grid-cols-3 col-start-1 col-span-4 row-start-3 justify-self-center mb-12 border-l border-r border-blue-25 xl:border-transparent"
+          >
             <!-- 1 col -->
-            <div class="px-6 flex flex-col gap-6 text-sm">
+            <div class="px-6 flex flex-col gap-6 text-sm mt-6 xl:mt-0">
               <el-form-item class="flex-col mb-2.5">
                 <template #label>
                   <div class="flex items-center text-nowrap text-black">
@@ -371,7 +374,7 @@
             </div>
 
             <!-- 2 col -->
-            <div class="px-6 flex flex-col gap-6 text-sm">
+            <div class="px-6 flex flex-col gap-6 text-sm mt-6 xl:mt-0">
               <el-form-item class="flex-col mb-2.5">
                 <template #label>
                   <div class="flex items-center text-nowrap text-black">
@@ -508,15 +511,10 @@
                   />
                 </el-select>
               </el-form-item>
-
-              <div class="flex gap-4 justify-self-center h-14">
-                <a href="#" class="btn btn-primary btn-outline min-w-[163px]">Voltar</a>
-                <a href="#" class="btn btn-gradient min-w-[163px]">Continuar</a>
-              </div>
             </div>
 
             <!-- 3 col -->
-            <div class="px-6 flex flex-col gap-6 text-sm">
+            <div class="px-6 flex flex-col gap-6 text-sm mt-6 xl:mt-0">
               <div class="flex flex-col">
                 <label for="" class="flex items-center gap-2 mb-2 text-gray-400">
                   <span
@@ -583,17 +581,30 @@
                 />
               </div>
             </div>
+
+            <div
+              class="col-start-1 xl:col-start-2 flex flex-col xl:flex-row gap-4 xl:justify-center justify-self-center w-full h-14 mt-12 xl:mt-0 mb-[224px] xl:mb-0 px-4 xl:px-0"
+            >
+              <a href="#" class="btn btn-primary btn-outline w-full xl:w-max min-w-[163px]"
+                >Voltar</a
+              >
+              <a href="#" class="btn btn-gradient w-full xl:w-max min-w-[163px]">Continuar</a>
+            </div>
           </el-form>
+
+          <div
+            class="hidden xl:block h-screen border-l border-r border-blue-25 row-start-1 row-span-4 col-start-2 col-span-1"
+          ></div>
         </div>
 
         <div
-          class="absolute bottom-0 w-full pt-6 pb-12 bg-white bg-opacity-90 backdrop-blur-sm border-t border-t-blue-25"
+          class="absolute z-10 bottom-0 w-full pt-6 pb-12 bg-white bg-opacity-90 backdrop-blur-sm border-t border-t-blue-25"
         >
           <p class="text-green-100 text-xs font-bold text-center mb-4">
             Falta pouco para você garantir sua proposta de financiamento completa!
           </p>
 
-          <div class="container mx-auto">
+          <div class="w-[calc(100%-32px)] lg:container mx-4 lg:mx-auto">
             <el-progress
               :percentage="33"
               :stroke-width="8"

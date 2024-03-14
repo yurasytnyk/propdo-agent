@@ -299,7 +299,7 @@
         </div>
 
         <div
-          class="absolute bottom-0 w-full pt-6 pb-12 bg-white bg-opacity-90 backdrop-blur-sm border-t border-t-blue-25"
+          class="absolute z-10 bottom-0 w-full pt-6 pb-12 bg-white bg-opacity-90 backdrop-blur-sm border-t border-t-blue-25"
         >
           <p class="text-green-100 text-xs font-bold text-center mb-4">
             Falta pouco para você garantir sua proposta de financiamento completa!
@@ -323,11 +323,11 @@
 
       <!-- Comentários dos Clientes! section -->
       <section
-        class="container mx-4 lg:mx-auto grid content-center py-[148px] border-l border-r border-l-blue-25 border-r-blue-25"
+        class="w-[calc(100%-32px)] xl:container mx-4 xl:mx-auto grid content-center py-20 lg:py-30 border-l border-r border-l-blue-25 border-r-blue-25"
       >
         <!-- Section title -->
-        <div class="flex flex-col gap-1 items-start pb-16">
-          <h2 class="md:text-7xl text-[40px] leading-[48px] mb-8 md:mb-0 uppercase font-secondary">
+        <div class="flex flex-col gap-1 items-start mb-8 lg:mb-14">
+          <h2 class="md:text-7xl text-[40px] leading-[40px] mb-1 uppercase font-secondary">
             Comentários dos Clientes!
           </h2>
 
@@ -335,8 +335,8 @@
         </div>
 
         <!-- Testimonials carousel -->
-        <div class="swiper testimonials-slider container lg:overflow-visible">
-          <div class="swiper-wrapper container mx-auto">
+        <div class="swiper testimonials-slider container xl:overflow-visible pb-6 lg:pb-0">
+          <div class="swiper-wrapper">
             <!-- Testimonial card -->
             <article
               class="swiper-slide flex flex-col gap-6 rounded-5 border border-gray-50 p-6 text-sm italic bg-white"
@@ -831,7 +831,7 @@
             </article>
           </div>
 
-          <div class="swiper-scrollbar bg-blue-25"></div>
+          <div class="swiper-scrollbar bg-blue-25 !bottom-0"></div>
         </div>
 
         <div class="h-screen hidden lg:flex absolute -z-1 border-r border-r-blue-25 left-2/4"></div>
