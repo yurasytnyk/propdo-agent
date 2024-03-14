@@ -15,6 +15,9 @@ export default {
         primary: ["Montserrat"],
         secondary: ["Bebas Neue"],
       },
+      zIndex: {
+        1: 1,
+      },
       colors: {
         "nav-theme": "var(--nav-theme)",
         "nav-border-theme": "var(--nav-border-theme)",
