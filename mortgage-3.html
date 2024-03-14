@@ -246,18 +246,18 @@
       <!-- Mortgage step 3 -->
       <section>
         <div
-          class="container mx-auto grid grid-cols-3 h-screen border-l border-r border-l-blue-25 border-r-blue-25"
+          class="w-[calc(100%-32px)] sm:container mx-4 sm:mx-auto grid grid-cols-1 lg:grid-cols-3 grid-rows-[min(15vh,200px)_90px_1fr] h-screen border-l border-r border-blue-25"
         >
-          <div class="col-start-2 row-start-1 grid self-center relative">
-            <h1
-              class="font-secondary text-7xl text-center mb-12 absolute left-2/4 -top-24 -translate-x-2/4 min-w-max"
-            >
-              Simulador de <span class="text-blue-100">Financiamento</span>
-            </h1>
+          <h1
+            class="col-start-1 col-span-3 row-start-2 justify-self-center font-secondary text-[40px] md:text-7xl leading-none text-center max-w-[345px] sm:max-w-max sm:min-w-max"
+          >
+            Simulador de <span class="text-blue-100">Financiamento</span>
+          </h1>
 
+          <div class="col-start-1 lg:col-start-2 row-start-3 grid self-start relative">
             <el-form
               label-position="left"
-              class="flex flex-col w-full px-6 gap-6 justify-self-center mb-12"
+              class="flex flex-col w-full px-6 gap-4 justify-self-center mb-12"
             >
               <el-form-item label="Como gostaria de ser contatado?" class="flex-col mb-0">
                 <el-select
@@ -296,7 +296,7 @@
               </div>
 
               <div class="flex flex-col">
-                <div class="mb-4">
+                <div class="mb-6">
                   <el-checkbox
                     v-model="checked"
                     label="Concordo com os termos de uso e política de privacidade"
@@ -312,14 +312,14 @@
               </div>
             </el-form>
 
-            <div class="flex gap-4 justify-self-center">
-              <a href="#" class="btn btn-primary btn-outline min-w-[163px]">Voltar</a>
-              <a href="#" class="btn btn-gradient min-w-[163px]">Continuar</a>
+            <div class="flex flex-col lg:flex-row gap-4 justify-self-center w-full px-4">
+              <a href="#" class="btn btn-primary btn-outline w-full">Voltar</a>
+              <a href="#" class="btn btn-gradient w-full">Continuar</a>
             </div>
           </div>
 
           <div
-            class="col-start-2 col-span-1 row-start-1 -z-1 h-screen border-l border-r border-l-blue-25 border-r-blue-25"
+            class="col-start-1 lg:col-start-2 col-span-1 row-start-1 -z-1 h-screen border-l border-r border-blue-25"
           ></div>
         </div>
 
@@ -330,7 +330,7 @@
             Falta pouco para você garantir sua proposta de financiamento completa!
           </p>
 
-          <div class="container mx-auto">
+          <div class="w-[calc(100%-32px)] lg:container mx-4 lg:mx-auto">
             <el-progress
               :percentage="66"
               :stroke-width="8"
