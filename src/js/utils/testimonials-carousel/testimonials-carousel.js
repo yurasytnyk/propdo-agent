@@ -16,7 +16,7 @@ export function initTestimonialsCarousel() {
       el: ".swiper-scrollbar",
       hide: true,
       draggable: true,
-      dragSize: 380,
+      dragSize: matchMedia("(max-width: 1024px)").matches ? 112 : 380,
     },
     breakpoints: testimonialsCarouselBreakpoints,
   });
