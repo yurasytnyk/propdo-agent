@@ -54,15 +54,18 @@ export default {
       },
       padding: {
         17.5: "4.375rem",
+        30: "7.5rem",
       },
       margin: {
         15: "3.75rem",
         22: "5.5rem",
+        30: "7.5rem",
       },
       borderRadius: {
-        3.5: "14px",
-        5: "20px",
-        25: "100px",
+        2.5: "0.625rem",
+        3.5: "0.875rem",
+        5: "1.25rem",
+        25: "6.25rem",
       },
     },
   },

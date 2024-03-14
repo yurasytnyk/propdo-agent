@@ -5,7 +5,6 @@ import { testimonialsCarouselBreakpoints } from "../../configs/testimonials-caro
 
 export function initTestimonialsCarousel() {
   new Swiper(".testimonials-slider", {
-    slidesPerView: 3,
     direction: "horizontal",
     spaceBetween: 30,
     modules: [Scrollbar, Keyboard],

@@ -10,11 +10,6 @@ import "swiper/css/scrollbar";
 import "swiper/css/pagination";
 import "@/styles/main.css";
 
-initScreenCarousel();
-initChart(chartMockData);
-initCarousel();
-initTestimonialsCarousel();
-
 const App = {
   data() {
     return {
@@ -34,3 +29,8 @@ const App = {
 const app = Vue.createApp(App);
 app.use(ElementPlus);
 app.mount("#app");
+
+initScreenCarousel();
+// initChart(chartMockData);
+initCarousel();
+initTestimonialsCarousel();

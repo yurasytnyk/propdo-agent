@@ -111,3 +111,7 @@
 .el-checkbox__input.is-checked + .el-checkbox__label {
   --el-checkbox-checked-text-color: black;
 }
+
+.el-popper {
+  @apply max-w-[238px] text-xs py-4 px-3 rounded-2.5;
+}

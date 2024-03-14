@@ -244,17 +244,17 @@
 
     <main class="overflow-x-hidden">
       <!-- Calculator section -->
-      <section
-        class="container mx-auto h-screen grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
-      >
-        <h1 class="font-secondary text-7xl text-center mb-12">
-          Simulador de <span class="text-blue-100">Financiamento Imobiliário</span>
-        </h1>
+      <section class="container mx-auto border-l border-r border-blue-25">
+        <div
+          class="h-screen grid content-center grid-cols-3 grid-rows-[min(20vh,200px)_100px_450px_1fr]"
+        >
+          <h1 class="z-1 row-start-2 col-start-1 col-span-3 font-secondary text-7xl text-center">
+            Simulador de <span class="text-blue-100">Financiamento Imobiliário</span>
+          </h1>
 
-        <div class="grid grid-cols-3">
           <el-form
             label-position="left"
-            class="flex flex-col gap-6 px-6 justify-self-center w-full"
+            class="row-start-3 col-start-1 grid content-start gap-6 px-6 justify-self-center w-full"
           >
             <el-form-item label="Como vamos ajudar você?" class="flex-col mb-0">
               <el-select
@@ -277,20 +277,28 @@
 
             <div class="text-sm">
               <label for="" class="flex items-center gap-2 mb-2 text-gray-400">
-                <span
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.99967 1.33334C4.31767 1.33334 1.33301 4.31801 1.33301 8.00001C1.33301 11.682 4.31767 14.6667 7.99967 14.6667C11.6817 14.6667 14.6663 11.682 14.6663 8.00001C14.6663 4.31801 11.6817 1.33334 7.99967 1.33334ZM8.49967 11C8.49967 11.276 8.27567 11.5 7.99967 11.5C7.72367 11.5 7.49967 11.276 7.49967 11V7.95265C7.49967 7.67665 7.72367 7.45265 7.99967 7.45265C8.27567 7.45265 8.49967 7.67665 8.49967 7.95265V11ZM8.01302 6.33334C7.64502 6.33334 7.34294 6.03468 7.34294 5.66668C7.34294 5.29868 7.63835 5.00001 8.00635 5.00001H8.01302C8.38169 5.00001 8.67969 5.29868 8.67969 5.66668C8.67969 6.03468 8.38102 6.33334 8.01302 6.33334Z"
-                      fill="#868899"
-                    />
-                  </svg>
-                </span>
+                <el-tooltip
+                  effect="dark"
+                  content="Você pode somar a sua renda com a de mais uma pessoa que também será resonsável e beneficiada com o financiamento, independente do grau de parentesco."
+                  placement="bottom-start"
+                  :show-arrow="false"
+                >
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="cursor-pointer text-gray-400 hover:text-blue-100 transition-colors duration-300"
+                    >
+                      <path
+                        d="M7.99967 1.33334C4.31767 1.33334 1.33301 4.31801 1.33301 8.00001C1.33301 11.682 4.31767 14.6667 7.99967 14.6667C11.6817 14.6667 14.6663 11.682 14.6663 8.00001C14.6663 4.31801 11.6817 1.33334 7.99967 1.33334ZM8.49967 11C8.49967 11.276 8.27567 11.5 7.99967 11.5C7.72367 11.5 7.49967 11.276 7.49967 11V7.95265C7.49967 7.67665 7.72367 7.45265 7.99967 7.45265C8.27567 7.45265 8.49967 7.67665 8.49967 7.95265V11ZM8.01302 6.33334C7.64502 6.33334 7.34294 6.03468 7.34294 5.66668C7.34294 5.29868 7.63835 5.00001 8.00635 5.00001H8.01302C8.38169 5.00001 8.67969 5.29868 8.67969 5.66668C8.67969 6.03468 8.38102 6.33334 8.01302 6.33334Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                </el-tooltip>
 
                 Qual a sua renda?</label
               >
@@ -300,20 +308,28 @@
 
             <div class="w-full text-sm">
               <label for="" class="flex items-center gap-2 mb-2 text-gray-400">
-                <span
-                  ><svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 16 16"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.99967 1.33334C4.31767 1.33334 1.33301 4.31801 1.33301 8.00001C1.33301 11.682 4.31767 14.6667 7.99967 14.6667C11.6817 14.6667 14.6663 11.682 14.6663 8.00001C14.6663 4.31801 11.6817 1.33334 7.99967 1.33334ZM8.49967 11C8.49967 11.276 8.27567 11.5 7.99967 11.5C7.72367 11.5 7.49967 11.276 7.49967 11V7.95265C7.49967 7.67665 7.72367 7.45265 7.99967 7.45265C8.27567 7.45265 8.49967 7.67665 8.49967 7.95265V11ZM8.01302 6.33334C7.64502 6.33334 7.34294 6.03468 7.34294 5.66668C7.34294 5.29868 7.63835 5.00001 8.00635 5.00001H8.01302C8.38169 5.00001 8.67969 5.29868 8.67969 5.66668C8.67969 6.03468 8.38102 6.33334 8.01302 6.33334Z"
-                      fill="#868899"
-                    />
-                  </svg>
-                </span>
+                <el-tooltip
+                  effect="dark"
+                  content="Você pode somar a sua renda com a de mais uma pessoa que também será resonsável e beneficiada com o financiamento, independente do grau de parentesco."
+                  placement="bottom-start"
+                  :show-arrow="false"
+                >
+                  <span
+                    ><svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="cursor-pointer text-gray-400 hover:text-blue-100 transition-colors duration-300"
+                    >
+                      <path
+                        d="M7.99967 1.33334C4.31767 1.33334 1.33301 4.31801 1.33301 8.00001C1.33301 11.682 4.31767 14.6667 7.99967 14.6667C11.6817 14.6667 14.6663 11.682 14.6663 8.00001C14.6663 4.31801 11.6817 1.33334 7.99967 1.33334ZM8.49967 11C8.49967 11.276 8.27567 11.5 7.99967 11.5C7.72367 11.5 7.49967 11.276 7.49967 11V7.95265C7.49967 7.67665 7.72367 7.45265 7.99967 7.45265C8.27567 7.45265 8.49967 7.67665 8.49967 7.95265V11ZM8.01302 6.33334C7.64502 6.33334 7.34294 6.03468 7.34294 5.66668C7.34294 5.29868 7.63835 5.00001 8.00635 5.00001H8.01302C8.38169 5.00001 8.67969 5.29868 8.67969 5.66668C8.67969 6.03468 8.38102 6.33334 8.01302 6.33334Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </span>
+                </el-tooltip>
                 Valor de entrada</label
               >
 
@@ -321,8 +337,8 @@
             </div>
           </el-form>
 
-          <article class="flex flex-col gap-24 items-center">
-            <div class="text-center grid grid-rows-[300px]">
+          <article class="row-start-3 col-start-2 grid content-start gap-24">
+            <div class="text-center grid justify-center grid-rows-[300px]">
               <!-- 0 months circle -->
               <svg
                 width="320"
@@ -539,10 +555,16 @@
               </div>
             </div>
 
-            <a href="#" class="btn btn-gradient min-w-[294px]">Solicitar Proposta</a>
+            <div class="flex flex-col items-center">
+              <a href="#" class="btn btn-gradient min-w-[294px] mb-6">Solicitar Proposta</a>
+
+              <p class="text-sm font-medium text-gray-400">
+                Obtenha uma avaliação instantânea da propriedade
+              </p>
+            </div>
           </article>
 
-          <article class="grid grid-cols-2 gap-4 px-6">
+          <article class="row-start-3 col-start-3 grid content-start grid-cols-2 gap-4 px-6">
             <div>
               <p class="text-sm text-gray-400 mb-2">1ª parcela</p>
 
@@ -587,24 +609,32 @@
               </div>
             </div>
 
-            <a href="#" class="text-sm font-bold underline text-blue-100 self-center text-center"
+            <a
+              href="#"
+              class="text-sm font-bold underline text-blue-100 self-center text-center mt-6"
               >Imposto Bancário</a
             >
           </article>
+
+          <div
+            class="hidden lg:block h-screen border-l border-r border-blue-25 row-start-1 row-span-2 col-start-2 col-span-1"
+          ></div>
         </div>
       </section>
 
       <!-- Como funciona? section -->
       <section class="bg-blue-100">
-        <div class="container mx-auto relative text-white">
+        <div
+          class="container mx-auto h-screen grid grid-rows-[min(15vh,200px)_200px_1fr] text-white"
+        >
           <h2
-            class="absolute left-4 lg:left-0 top-40 lg:top-48 z-10 uppercase lg:text-7xl text-[40px] leading-[48px] font-secondary"
+            class="z-1 ml-4 lg:ml-0 pointer-events-none row-start-2 uppercase lg:text-7xl text-[40px] leading-[48px] font-secondary"
           >
             Como funciona?
           </h2>
 
           <ol
-            class="grid grid-cols-[repeat(3,272px)] lg:grid-cols-3 overflow-x-auto overflow-y-hidden content-center h-screen ml-4 lg:ml-0 border-l-gray-a200 border-l border-r-gray-a200 border-r"
+            class="grid grid-cols-[repeat(3,272px)] lg:grid-cols-3 row-start-1 overflow-x-auto overflow-y-hidden content-center h-screen ml-4 lg:ml-0 border-l border-r border-gray-a200"
           >
             <li
               class="relative overflow-hidden px-8 h-screen flex flex-col justify-center bg-blue-100 group"
@@ -731,11 +761,11 @@
 
       <!-- Comentários dos Clientes! section -->
       <section
-        class="container mx-4 lg:mx-auto grid content-center py-[148px] border-l border-r border-l-blue-25 border-r-blue-25"
+        class="w-[calc(100%-32px)] xl:container mx-4 xl:mx-auto grid content-center py-20 lg:py-30 border-l border-r border-l-blue-25 border-r-blue-25"
       >
         <!-- Section title -->
-        <div class="flex flex-col gap-1 items-start pb-16">
-          <h2 class="md:text-7xl text-[40px] leading-[48px] mb-8 md:mb-0 uppercase font-secondary">
+        <div class="flex flex-col gap-1 items-start mb-8 lg:mb-14">
+          <h2 class="md:text-7xl text-[40px] leading-[40px] mb-1 uppercase font-secondary">
             Comentários dos Clientes!
           </h2>
 
@@ -743,7 +773,7 @@
         </div>
 
         <!-- Testimonials carousel -->
-        <div class="swiper testimonials-slider container lg:overflow-visible">
+        <div class="swiper testimonials-slider container xl:overflow-visible">
           <div class="swiper-wrapper container mx-auto">
             <!-- Testimonial card -->
             <article
@@ -1247,14 +1277,12 @@
 
       <!-- Imóvel Hub section -->
       <section
-        class="container mx-4 lg:mx-auto grid content-center border-l border-r border-l-blue-25 border-r-blue-25"
+        class="w-[calc(100%-32px)] container mx-4 lg:mx-auto py-20 lg:py-30 lg:h-screen grid content-center border-l border-r border-blue-25"
       >
         <!-- Section title -->
-        <div class="flex justify-between items-center py-16">
+        <div class="flex justify-between items-center mb-8 lg:mb-14">
           <div class="flex flex-col gap-1">
-            <h2
-              class="md:text-7xl text-[40px] leading-[48px] mb-8 md:mb-0 uppercase font-secondary"
-            >
+            <h2 class="md:text-7xl text-[40px] leading-[48px] uppercase font-secondary">
               Imóvel <span class="text-blue-100">Hub</span>
             </h2>
 
@@ -1266,69 +1294,27 @@
           <a href="#" class="btn btn-gradient hidden md:flex">Descobrir Mais</a>
         </div>
 
-        <div class="swiper horizontal-slider container lg:overflow-visible">
-          <div class="swiper-wrapper container mx-auto">
+        <div class="swiper horizontal-slider container pb-16 lg:mb-0 xl:overflow-visible">
+          <div class="swiper-wrapper items-end lg:items-start container mx-auto pt-1">
             <!-- Slide -->
             <div
-              class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
-            >
-              <!-- Post card -->
-              <a href="#" class="absolute">
-                <div class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]">
-                  <img
-                    src="/images/post-1.jpg"
-                    alt="blog post"
-                    class="absolute inset-0 rounded-5"
-                  />
-                </div>
-
-                <!-- Post card content -->
-                <div
-                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
-                >
-                  <div class="flex justify-between text-xs mb-4">
-                    <span class="font-bold">Bruce Willis</span>
-
-                    <span>September 20, 2023</span>
-                  </div>
-
-                  <div>
-                    <h3 class="font-bold mb-2">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
-                    </h3>
-
-                    <p class="text-sm">
-                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
-                      volutpat mattis eros. Nullam malesuada erat ut turpis...
-                    </p>
-                  </div>
-                </div>
-
-                <a
-                  href="#"
-                  class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
-                  >Read More</a
-                >
-              </a>
-            </div>
-
-            <!-- Slide -->
-            <div
-              class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
+              class="swiper-slide h-auto rounded-5 hover:lg:-translate-y-4 transition-all duration-300 group"
             >
               <!-- Post card -->
               <a href="#" class="relative">
-                <div class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]">
+                <div
+                  class="relative aspect-[345/348] sm:aspect-[570/420] post-image-wrapper transition-all duration-300"
+                >
                   <img
-                    src="/images/post-2.jpg"
+                    src="/images/post-1.jpg"
                     alt="blog post"
-                    class="absolute inset-0 rounded-5"
+                    class="absolute inset-0 rounded-5 h-full object-cover"
                   />
                 </div>
 
                 <!-- Post card content -->
                 <div
-                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
+                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 w-[calc(100%-32px)] lg:group-hover:-translate-y-20 transition-transform duration-300"
                 >
                   <div class="flex justify-between text-xs mb-4">
                     <span class="font-bold">Bruce Willis</span>
@@ -1337,7 +1323,7 @@
                   </div>
 
                   <div>
-                    <h3 class="font-bold mb-2">
+                    <h3 class="font-bold mb-2 text-sm lg:text-base">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
                     </h3>
 
@@ -1358,21 +1344,23 @@
 
             <!-- Slide -->
             <div
-              class="swiper-slide lg:w-[570px] rounded-5 hover:-translate-y-4 transition-all duration-300 group"
+              class="swiper-slide h-auto rounded-5 hover:lg:-translate-y-4 transition-all duration-300 group"
             >
               <!-- Post card -->
-              <a href="#" class="absolute">
-                <div class="relative aspect-[345/383] lg:aspect-[570/420] w-[345px] lg:w-[570px]">
+              <a href="#" class="relative">
+                <div
+                  class="aspect-[345/348] sm:aspect-[570/420] post-image-wrapper transition-all duration-300"
+                >
                   <img
-                    src="/images/post-3.jpg"
+                    src="/images/post-2.jpg"
                     alt="blog post"
-                    class="absolute inset-0 rounded-5"
+                    class="absolute inset-0 rounded-5 h-full object-cover"
                   />
                 </div>
 
                 <!-- Post card content -->
                 <div
-                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 max-w-[522px] w-full lg:group-hover:-translate-y-20 transition-transform duration-300"
+                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 w-[calc(100%-32px)] lg:group-hover:-translate-y-20 transition-transform duration-300"
                 >
                   <div class="flex justify-between text-xs mb-4">
                     <span class="font-bold">Bruce Willis</span>
@@ -1381,7 +1369,53 @@
                   </div>
 
                   <div>
-                    <h3 class="font-bold mb-2">
+                    <h3 class="font-bold mb-2 text-sm lg:text-base">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
+                    </h3>
+
+                    <p class="text-sm">
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque
+                      volutpat mattis eros. Nullam malesuada erat ut turpis...
+                    </p>
+                  </div>
+                </div>
+
+                <a
+                  href="#"
+                  class="btn btn-gradient hidden lg:flex border-none absolute bottom-0 group-hover:-translate-y-8 opacity-0 group-hover:opacity-100 left-6 transition-all duration-300"
+                  >Read More</a
+                >
+              </a>
+            </div>
+
+            <!-- Slide -->
+            <div
+              class="swiper-slide h-auto rounded-5 hover:lg:-translate-y-4 transition-all duration-300 group"
+            >
+              <!-- Post card -->
+              <a href="#" class="relative">
+                <div
+                  class="relative aspect-[345/348] sm:aspect-[570/420] post-image-wrapper transition-all duration-300"
+                >
+                  <img
+                    src="/images/post-3.jpg"
+                    alt="blog post"
+                    class="absolute inset-0 rounded-5 h-full object-cover"
+                  />
+                </div>
+
+                <!-- Post card content -->
+                <div
+                  class="p-4 bg-gray-a200 absolute left-2/4 -translate-x-2/4 bottom-6 backdrop-blur-sm text-white rounded-3.5 w-[calc(100%-32px)] lg:group-hover:-translate-y-20 transition-transform duration-300"
+                >
+                  <div class="flex justify-between text-xs mb-4">
+                    <span class="font-bold">Bruce Willis</span>
+
+                    <span>September 20, 2023</span>
+                  </div>
+
+                  <div>
+                    <h3 class="font-bold mb-2 text-sm lg:text-base">
                       Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. 
                     </h3>
 
@@ -1401,70 +1435,74 @@
             </div>
           </div>
 
-          <div class="swiper-scrollbar bg-blue-25"></div>
+          <div class="swiper-scrollbar !relative -mt-4 lg:mt-0 bg-blue-25"></div>
         </div>
 
-        <a href="#" class="btn btn-gradient w-[calc(100%-32px)] mx-auto mb-15 md:mb-0 md:hidden"
+        <a href="#" class="btn btn-gradient w-[calc(100%-32px)] mx-auto md:hidden"
           >Descobrir Mais</a
         >
 
-        <div class="h-screen hidden lg:flex absolute -z-1 border-r border-r-blue-25 left-2/4"></div>
-
-        <!-- Calculator Banner -->
-        <article
-          class="relative bg-gradient-to-r from-blue-100 to-purple-500 rounded-5 my-36 pl-16 py-9"
-        >
-          <div class="absolute top-0 left-0 aspect-[151/225] w-[151px]">
-            <img
-              src="/images/banner-decoration-1.png"
-              class="absolute inset-0 rounded-tl-5"
-              loading="lazy"
-              alt="banner decoration element"
-            />
-          </div>
-
-          <div class="absolute right-0 bottom-0 aspect-[271/230] w-[271px]">
-            <img
-              src="/images/banner-decoration-2.png"
-              class="absolute inset-0 rounded-br-5"
-              loading="lazy"
-              alt="banner decoration element"
-            />
-          </div>
-
-          <div class="z-1 relative flex items-center gap-8">
-            <div class="bg-gray-a200 size-24 flex items-center justify-center rounded-full">
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20.9835 29.15C21.3501 27.9833 22.3335 27.1667 23.5335 27L25.4834 26.7167L26.3167 25.0833C26.8501 24 27.95 23.3333 29.1667 23.3333C29.45 23.3333 30 23.2833 30 22.75V16.25H25C20.9667 16.25 18.75 14.0333 18.75 10V5H10C6.66667 5 5 6.66667 5 10V30C5 33.3333 6.66667 35 10 35C10 35 22.1667 35 22.55 35C22.9334 35 23.0168 34.6166 23.0168 34.6166L23.1832 33.6833L21.8001 32.3667C20.9335 31.5334 20.6168 30.3 20.9835 29.15ZM11.6667 18.75H23.3333C24.0233 18.75 24.5833 19.31 24.5833 20C24.5833 20.69 24.0233 21.25 23.3333 21.25H11.6667C10.9767 21.25 10.4167 20.69 10.4167 20C10.4167 19.31 10.9767 18.75 11.6667 18.75ZM18.3333 27.9167H11.6667C10.9767 27.9167 10.4167 27.3567 10.4167 26.6667C10.4167 25.9767 10.9767 25.4167 11.6667 25.4167H18.3333C19.0233 25.4167 19.5833 25.9767 19.5833 26.6667C19.5833 27.3567 19.0233 27.9167 18.3333 27.9167ZM21.25 10V6.25L28.75 13.75H25C22.3667 13.75 21.25 12.6333 21.25 10ZM32.7034 32.5616C32.5501 32.7083 32.48 32.92 32.5167 33.1267L32.9968 35.87C33.0935 36.4267 32.4985 36.85 31.9902 36.5883L29.4698 35.2916C29.2798 35.195 29.0551 35.195 28.8668 35.2916L26.3485 36.5867C25.8385 36.85 25.2418 36.4233 25.3402 35.8666L25.8199 33.1267C25.8566 32.92 25.7865 32.7083 25.6331 32.5616L23.5335 30.5583C23.1469 30.19 23.3599 29.5467 23.8932 29.4717L26.7985 29.0583C27.0102 29.0283 27.1918 28.8984 27.2868 28.71L28.5449 26.2133C28.7999 25.7067 29.5366 25.7067 29.7933 26.2133L31.0518 28.71C31.1468 28.8984 31.3301 29.0283 31.5401 29.0583L34.445 29.4717C34.9783 29.5467 35.1901 30.19 34.8051 30.5583L32.7034 32.5616Z"
-                  fill="white"
-                />
-              </svg>
-            </div>
-
-            <div class="text-white max-w-[507px]">
-              <h2 class="font-bold text-5xl leading-[56px] mb-2">Quanto vale o seu imóvel?</h2>
-              <p class="text-sm">
-                Faça já avaliação do seu imóvel de maneira gratuita em nossa calculadora online.
-              </p>
-            </div>
-
-            <a href="#" class="btn bg-white text-purple-500 border-none min-w-40">Avaliar</a>
-          </div>
-
-          <img
-            src="/svg/banner-star.svg"
-            class="absolute -bottom-0 right-10"
-            alt="banner star cartoon character"
-          />
-        </article>
+        <div class="h-screen hidden lg:flex absolute border-r border-r-blue-25 left-2/4"></div>
       </section>
+
+      <!-- Calculator Banner -->
+      <article
+        class="w-[calc(100%-32px)] xl:container mx-4 xl:mx-auto aspect-[345/460] sm:aspect-auto relative bg-gradient-to-r from-blue-100 to-purple-500 rounded-5 pt-10 mb-10 lg:mb-20 sm:pl-16 sm:py-9"
+      >
+        <div class="absolute top-0 left-0 aspect-[151/225] w-[151px]">
+          <img
+            src="/images/banner-decoration-1.png"
+            class="absolute inset-0 rounded-tl-5"
+            loading="lazy"
+            alt="banner decoration element"
+          />
+        </div>
+
+        <div class="absolute right-0 bottom-0 aspect-[271/230] w-[271px]">
+          <img
+            src="/images/banner-decoration-2.png"
+            class="absolute inset-0 rounded-br-5"
+            loading="lazy"
+            alt="banner decoration element"
+          />
+        </div>
+
+        <div
+          class="z-1 relative flex flex-col lg:flex-row items-center gap-4 lg:gap-8 text-center lg:text-left"
+        >
+          <div class="bg-gray-a200 size-24 flex items-center justify-center rounded-full">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.9835 29.15C21.3501 27.9833 22.3335 27.1667 23.5335 27L25.4834 26.7167L26.3167 25.0833C26.8501 24 27.95 23.3333 29.1667 23.3333C29.45 23.3333 30 23.2833 30 22.75V16.25H25C20.9667 16.25 18.75 14.0333 18.75 10V5H10C6.66667 5 5 6.66667 5 10V30C5 33.3333 6.66667 35 10 35C10 35 22.1667 35 22.55 35C22.9334 35 23.0168 34.6166 23.0168 34.6166L23.1832 33.6833L21.8001 32.3667C20.9335 31.5334 20.6168 30.3 20.9835 29.15ZM11.6667 18.75H23.3333C24.0233 18.75 24.5833 19.31 24.5833 20C24.5833 20.69 24.0233 21.25 23.3333 21.25H11.6667C10.9767 21.25 10.4167 20.69 10.4167 20C10.4167 19.31 10.9767 18.75 11.6667 18.75ZM18.3333 27.9167H11.6667C10.9767 27.9167 10.4167 27.3567 10.4167 26.6667C10.4167 25.9767 10.9767 25.4167 11.6667 25.4167H18.3333C19.0233 25.4167 19.5833 25.9767 19.5833 26.6667C19.5833 27.3567 19.0233 27.9167 18.3333 27.9167ZM21.25 10V6.25L28.75 13.75H25C22.3667 13.75 21.25 12.6333 21.25 10ZM32.7034 32.5616C32.5501 32.7083 32.48 32.92 32.5167 33.1267L32.9968 35.87C33.0935 36.4267 32.4985 36.85 31.9902 36.5883L29.4698 35.2916C29.2798 35.195 29.0551 35.195 28.8668 35.2916L26.3485 36.5867C25.8385 36.85 25.2418 36.4233 25.3402 35.8666L25.8199 33.1267C25.8566 32.92 25.7865 32.7083 25.6331 32.5616L23.5335 30.5583C23.1469 30.19 23.3599 29.5467 23.8932 29.4717L26.7985 29.0583C27.0102 29.0283 27.1918 28.8984 27.2868 28.71L28.5449 26.2133C28.7999 25.7067 29.5366 25.7067 29.7933 26.2133L31.0518 28.71C31.1468 28.8984 31.3301 29.0283 31.5401 29.0583L34.445 29.4717C34.9783 29.5467 35.1901 30.19 34.8051 30.5583L32.7034 32.5616Z"
+                fill="white"
+              />
+            </svg>
+          </div>
+
+          <div class="text-white max-w-[507px]">
+            <h2 class="font-bold text-xl leading-6 lg:text-5xl lg:leading-[56px] mb-2">
+              Quanto vale o seu imóvel?
+            </h2>
+            <p class="text-sm">
+              Faça já avaliação do seu imóvel de maneira gratuita em nossa calculadora online.
+            </p>
+          </div>
+
+          <a href="#" class="btn bg-white text-purple-500 border-none min-w-40">Avaliar</a>
+        </div>
+
+        <img
+          src="/svg/banner-star.svg"
+          class="absolute -bottom-0 right-20 sm:right-10"
+          alt="banner star cartoon character"
+        />
+      </article>
 
       <footer class="bg-blue-100">
         <!-- Footer main content -->
