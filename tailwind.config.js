@@ -17,6 +17,7 @@ export default {
       },
       zIndex: {
         1: 1,
+        2: 2,
       },
       colors: {
         "nav-theme": "var(--nav-theme)",

@@ -237,7 +237,7 @@
     </header>
 
     <div class="swiper vertical-slider h-full w-full overflow-visible overflow-x-hidden">
-      <main class="swiper-wrapper block xl:flex h-auto xl:h-full">
+      <main class="swiper-wrapper block xl:flex flex-col h-auto xl:h-full">
         <!-- Chart section -->
         <div class="swiper-slide" data-slide-theme="light">
           <section class="container mx-auto">
@@ -595,7 +595,9 @@
                   Imóvel <span class="text-blue-100">Hub</span>
                 </h2>
 
-                <h3 class="text-gray-400">INTRO Descubra o passo a passo para financiar a compra de um imóvel.</h3>
+                <h3 class="text-gray-400">
+                  INTRO Descubra o passo a passo para financiar a compra de um imóvel.
+                </h3>
               </div>
 
               <a href="#" class="btn btn-gradient hidden md:flex">Descobrir Mais</a>
@@ -753,22 +755,2386 @@
           </section>
         </div>
 
+        <!-- Browse by location section -->
         <div class="swiper-slide" data-slide-theme="light">
-          <!-- Browse by location section -->
           <section class="relative bg-blue-25">
             <div
-              class="w-[calc(100%-32px)] container mx-4 lg:mx-auto lg:h-screen grid content-center border-l border-r border-l-white border-r-white"
+              data-active-collapse
+              class="w-[calc(100%-32px)] container mx-4 lg:mx-auto lg:h-screen grid grid-cols-3 grid-rows-[min(15vh,200px)_200px_1fr] border-l border-r border-l-white border-r-white"
             >
               <!-- Section title -->
-              <div class="flex justify-between items-center py-16">
+              <div class="z-2 row-start-2 col-start-1 col-span-3 flex justify-between items-center">
                 <h2 class="md:text-7xl text-[40px] leading-[48px] uppercase font-secondary">
                   Browse by <span class="text-blue-100">location</span>
                 </h2>
               </div>
+
+              <ul class="grid content-start z-2 row-start-3 col-start-1 font-bold gap-6 px-6">
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="0"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group" :open="activeCollapse === 0">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="1"
+                      @click="activeCollapse = 1"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="2"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="3"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="4"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="5"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="6"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary
+                      class="list-none flex items-center justify-between"
+                      data-collapse-index="7"
+                    >
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+
+              <ul class="grid content-start z-2 row-start-3 col-start-2 font-bold gap-6 px-6">
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+
+              <ul class="grid content-start z-2 row-start-3 col-start-3 font-bold gap-6 px-6">
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+
+                <li class="cursor-pointer">
+                  <details class="group">
+                    <summary class="list-none flex items-center justify-between">
+                      Brighton
+
+                      <button class="pointer-events-none" tabindex="-1">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="group-open:hidden"
+                        >
+                          <path
+                            d="M19 11H13V5C13 4.448 12.552 4 12 4C11.448 4 11 4.448 11 5V11H5C4.448 11 4 11.448 4 12C4 12.552 4.448 13 5 13H11V19C11 19.552 11.448 20 12 20C12.552 20 13 19.552 13 19V13H19C19.552 13 20 12.552 20 12C20 11.448 19.552 11 19 11Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="hidden group-open:flex"
+                        >
+                          <path
+                            d="M19 13H5C4.448 13 4 12.552 4 12C4 11.448 4.448 11 5 11H19C19.552 11 20 11.448 20 12C20 12.552 19.552 13 19 13Z"
+                            fill="#2E67DE"
+                          />
+                        </svg>
+                      </button>
+                    </summary>
+
+                    <ul class="font-medium pl-2 flex flex-col gap-3 pt-2.5">
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Houses for sale in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Flats to rent in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="flex items-center justify-between">
+                          Property in Aberdeen
+
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M10.0003 17.0003C9.74428 17.0003 9.48825 16.9023 9.29325 16.7073C8.90225 16.3163 8.90225 15.6842 9.29325 15.2933L12.5862 12.0003L9.29325 8.70731C8.90225 8.31631 8.90225 7.68425 9.29325 7.29325C9.68425 6.90225 10.3163 6.90225 10.7073 7.29325L14.7073 11.2933C15.0983 11.6842 15.0983 12.3163 14.7073 12.7073L10.7073 16.7073C10.5123 16.9023 10.2563 17.0003 10.0003 17.0003Z"
+                              fill="#868899"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </details>
+                </li>
+              </ul>
+
+              <div
+                class="h-screen border-l border-r border-white row-start-1 row-span-4 col-start-2 col-span-1"
+              ></div>
             </div>
 
             <div
-              class="absolute left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4 aspect-[1075/541] w-[1075px]"
+              class="absolute z-1 left-2/4 top-[60%] -translate-x-2/4 -translate-y-2/4 aspect-[1075/541] w-[1075px]"
             >
               <img
                 src="/images/map.png"
