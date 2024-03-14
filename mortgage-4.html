@@ -244,13 +244,13 @@
 
     <main class="overflow-x-hidden">
       <!-- Mortgage step 4 -->
-      <section class="relative bg-gradient-to-r from-blue-100 to-purple-500">
+      <section class="relative bg-gradient-to-r from-blue-100 to-purple-500 overflow-hidden">
         <div
-          class="relative z-1 text-center text-white container mx-auto grid grid-cols-[1fr_100px_390px_100px_1fr] h-screen border-l border-r border-l-gray-a200 border-r-gray-a200"
+          class="relative z-1 text-center text-white container mx-auto grid grid-cols-1 md:grid-cols-[1fr_100px_390px_100px_1fr] h-screen border-l border-r border-l-gray-a200 border-r-gray-a200"
         >
-          <div class="grid row-start-1 col-start-2 col-span-3 self-center">
-            <h1 class="text-7xl font-secondary mb-4">Parabéns!</h1>
-            <p class="text-xl font-bold max-w-[697px] mb-8 justify-self-center">
+          <div class="grid row-start-1 col-start-2 col-span-3 self-center mx-4 lg:mx-0">
+            <h1 class="text-[40px] lg:text-7xl font-secondary mb-4">Parabéns!</h1>
+            <p class="text-sm lg:text-xl font-bold max-w-[697px] mb-8 justify-self-center">
               Você deu um passo importante para a aprovação do seu financiamento imobiliário.
             </p>
 
@@ -261,20 +261,24 @@
               class="mb-8 justify-self-center"
             />
 
-            <h2 class="font-bold text-xl mb-2">Quer comprar?</h2>
-            <p class="font-bold mb-8">Obtenha uma avaliação instantânea da propriedade</p>
+            <h2 class="font-bold text-lg lg:text-xl mb-2">Quer comprar?</h2>
+            <p class="font-bold text-sm lg:text-base mb-8">
+              Obtenha uma avaliação instantânea da propriedade
+            </p>
 
-            <a href="#" class="btn text-purple-500 bg-white min-w-[294px] justify-self-center"
+            <a href="#" class="btn text-purple-500 bg-white min-w-[294px] justify-self-center mb-12"
               >Evaluate your property</a
             >
           </div>
 
           <div
-            class="col-start-3 row-start-1 h-screen border-l border-r border-l-gray-a200 border-r-gray-a200"
+            class="hidden md:flex col-start-3 row-start-1 h-screen border-l border-r border-gray-a200"
           ></div>
         </div>
 
-        <div class="absolute top-0 left-0 aspect-[413/652] w-[413px]">
+        <div
+          class="absolute top-0 left-0 aspect-[175/296] w-[175px] lg:aspect-[413/652] lg:w-[413px]"
+        >
           <img
             src="/images/mortgage-decoration-1.png"
             class="absolute"
@@ -283,7 +287,9 @@
           />
         </div>
 
-        <div class="absolute bottom-0 right-0 aspect-[239/726] w-[239px]">
+        <div
+          class="absolute bottom-20 lg:bottom-0 right-0 aspect-[175/296] w-[175px] lg:aspect-[239/726] lg:w-[239px]"
+        >
           <img
             src="/images/mortgage-decoration-2.png"
             class="absolute"
@@ -299,7 +305,7 @@
             Falta pouco para você garantir sua proposta de financiamento completa!
           </p>
 
-          <div class="container mx-auto">
+          <div class="w-[calc(100%-32px)] lg:container mx-4 lg:mx-auto">
             <el-progress
               :percentage="100"
               :stroke-width="8"
