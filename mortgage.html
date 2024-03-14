@@ -244,14 +244,19 @@
 
     <main class="overflow-x-hidden">
       <!-- Calculator section -->
-      <section class="container mx-auto border-l border-r border-blue-25">
+      <section
+        class="w-[calc(100%-32px)] container mx-4 lg:mx-auto border-l border-r border-blue-25"
+      >
         <div
-          class="h-screen grid content-center grid-cols-3 grid-rows-[min(20vh,200px)_100px_450px_1fr]"
+          class="h-[calc(100vh+(max(20vh,400px)))] lg:h-screen grid content-center grid-cols-1 lg:grid-cols-3 lg:grid-rows-[min(20vh,200px)_100px_450px_1fr]"
         >
-          <h1 class="z-1 row-start-2 col-start-1 col-span-3 font-secondary text-7xl text-center">
-            Simulador de <span class="text-blue-100">Financiamento Imobiliário</span>
+          <h1
+            class="z-1 row-start-2 col-start-1 col-span-3 justify-self-center font-secondary text-4.5xl sm:text-7xl leading-none text-center max-w-[345px] sm:max-w-max"
+          >
+            Simulador de <span class="text-blue-100">Financiamento</span>
           </h1>
 
+          <!-- TODO: remove hidden -->
           <el-form
             label-position="left"
             class="row-start-3 col-start-1 grid content-start gap-6 px-6 justify-self-center w-full"
@@ -337,9 +342,14 @@
 
               <input type="text" class="input input-small w-full" placeholder="R$" />
             </div>
+
+            <!-- TODO: change hidden to flex on mobile -->
+            <a href="#" class="hidden btn btn-gradient w-full">Calculate</a>
           </el-form>
 
-          <article class="row-start-3 col-start-2 grid content-start gap-24">
+          <article
+            class="row-start-3 col-start-1 lg:col-start-2 grid content-start gap-24 mt-10 lg:mt-0"
+          >
             <div class="text-center grid justify-center grid-rows-[300px]">
               <!-- 0 months circle -->
               <svg
@@ -557,7 +567,7 @@
               </div>
             </div>
 
-            <div class="flex flex-col items-center">
+            <div class="hidden lg:flex flex-col items-center">
               <a href="#" class="btn btn-gradient min-w-[294px] mb-6">Solicitar Proposta</a>
 
               <p class="text-sm font-medium text-gray-400">
@@ -566,7 +576,9 @@
             </div>
           </article>
 
-          <article class="row-start-3 col-start-3 grid content-start grid-cols-2 gap-4 px-6">
+          <article
+            class="row-start-4 lg:row-start-3 col-start-1 lg:col-start-3 grid content-start grid-cols-2 gap-4 px-6 mt-20 lg:mt-0"
+          >
             <div>
               <p class="text-sm text-gray-400 mb-2">1ª parcela</p>
 
@@ -616,6 +628,12 @@
               class="text-sm font-bold underline text-blue-100 self-center text-center mt-6"
               >Imposto Bancário</a
             >
+
+            <div class="flex lg:hidden flex-col gap-6 items-center col-start-1 col-span-2">
+              <a href="#" class="btn btn-gradient w-full">Solicitar Proposta</a>
+
+              <a href="#" class="btn btn-primary btn-outline w-full">Voltar</a>
+            </div>
           </article>
 
           <div

@@ -10,6 +10,7 @@ export default {
     extend: {
       fontSize: {
         xxs: "0.5rem",
+        "4.5xl": "2.5rem",
       },
       fontFamily: {
         primary: ["Montserrat"],
