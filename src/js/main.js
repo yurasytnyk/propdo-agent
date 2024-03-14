@@ -31,6 +31,6 @@ app.use(ElementPlus);
 app.mount("#app");
 
 initScreenCarousel();
-// initChart(chartMockData);
+initChart(chartMockData);
 initCarousel();
 initTestimonialsCarousel();

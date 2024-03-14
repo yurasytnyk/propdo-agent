@@ -112,6 +112,6 @@
   --el-checkbox-checked-text-color: black;
 }
 
-.el-popper {
+.el-popper.tooltip {
   @apply max-w-[238px] text-xs py-4 px-3 rounded-2.5;
 }
