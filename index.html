@@ -766,16 +766,20 @@
           <section class="relative bg-blue-25">
             <div
               data-active-collapse
-              class="w-[calc(100%-32px)] container mx-4 lg:mx-auto lg:h-screen grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-[min(15vh,200px)_200px_1fr] border-l border-r border-l-white border-r-white"
+              class="w-[calc(100%-32px)] container mx-4 lg:mx-auto lg:h-screen grid gap-12 lg:gap-0 grid-cols-1 lg:grid-cols-3 lg:grid-rows-[min(15vh,200px)_200px_1fr] border-l border-r border-white pt-[136px] pb-[38px] lg:py-0"
             >
               <!-- Section title -->
-              <div class="z-2 row-start-2 col-start-1 col-span-3 flex justify-between items-center">
+              <div
+                class="z-2 row-start-1 lg:row-start-2 lg:col-start-1 lg:col-span-3 flex justify-between items-center"
+              >
                 <h2 class="md:text-7xl text-[40px] leading-[48px] uppercase font-secondary">
                   Browse by <span class="text-blue-100">location</span>
                 </h2>
               </div>
 
-              <ul class="grid content-start z-2 row-start-3 col-start-1 font-bold gap-6 px-6">
+              <ul
+                class="grid content-start z-2 col-start-1 row-start-2 lg:row-start-3 lg:col-start-1 font-bold gap-6 px-4 lg:px-6"
+              >
                 <li class="cursor-pointer">
                   <details class="group">
                     <summary
@@ -1578,7 +1582,9 @@
                 </li>
               </ul>
 
-              <ul class="grid content-start z-2 row-start-3 col-start-2 font-bold gap-6 px-6">
+              <ul
+                class="grid content-start z-2 col-start-1 row-start-3 lg:row-start-3 lg:col-start-2 font-bold gap-6 px-4 lg:px-6"
+              >
                 <li class="cursor-pointer">
                   <details class="group">
                     <summary class="list-none flex items-center justify-between">
@@ -2356,7 +2362,9 @@
                 </li>
               </ul>
 
-              <ul class="grid content-start z-2 row-start-3 col-start-3 font-bold gap-6 px-6">
+              <ul
+                class="grid content-start z-2 col-start-1 lg:row-start-3 lg:col-start-3 font-bold gap-6 px-4 lg:px-6"
+              >
                 <li class="cursor-pointer">
                   <details class="group">
                     <summary class="list-none flex items-center justify-between">
@@ -3133,6 +3141,8 @@
                   </details>
                 </li>
               </ul>
+
+              <button class="btn btn-gradient w-full lg:hidden z-1">Discover More</button>
 
               <div
                 class="hidden lg:block h-screen border-l border-r border-white row-start-1 row-span-4 col-start-2 col-span-1"
